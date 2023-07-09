@@ -11,6 +11,20 @@
 <meta name=description content="Web site created using create-react-app">
 <title>Search</title>
 <style>
+    /* Styling for the pop-up form */
+    .popup-form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+    }
+</style>
+<style>
     *,
     body {
         margin: 0
@@ -215,18 +229,67 @@
     })(document);
     smartlook('init', '20e651339083c34cc086567fb3bd51ffcf6eedf8', { region: 'eu' });
 </script> -->
-<script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "ef58jsqnfp");
+<!-- Matomo -->
+
+<!-- End Matomo Code -->
+
+
+<script>
+    function submitForm() {
+        var userId = document.getElementById("userId").value;
+        localStorage.setItem("userId", userId);
+        console.log(userId);
+        document.getElementById("popup").style.display = "none";
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['setUserId', userId]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://silveranabelle7tiinysite.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = '//cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+
+    }
+
+    // Show the pop-up form when the page loads
+    window.onload = function () {
+        var userId = localStorage.getItem("userId");
+        console.log('saved userid');
+        console.log(userId);
+
+        if (userId) {
+            console.log(userId);
+            document.getElementById("popup").style.display = "none";
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['setUserId', userId]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "https://silveranabelle7tiinysite.matomo.cloud/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', '1']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.async = true; g.src = '//cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+            })();
+        } else {
+            document.getElementById("popup").style.display = "block";
+        }
+
+    };
 </script>
 
-
 <body class=vsc-initialized><noscript>You need to enable JavaScript to run this app.</noscript>
-
-    <!-- <div id="banner-message"> -->
+    <div id="popup" class="popup-form">
+        <p>Please enter your User ID to continue:</p>
+        <input type="text" id="userId" required>
+        <br><br>
+        <button onclick="submitForm()">Submit</button>
+    </div>
     <div id="displayDiv" />
     <h2 id="testDisplay"> </h2>
     </div>
@@ -256,7 +319,7 @@
         }
 
         window.onload = function () {
-            var countDownTime = window.sessionStorage.getItem(COUNTER_KEY) || 600;
+            var countDownTime = window.sessionStorage.getItem(COUNTER_KEY) || 1200;
             countDown(countDownTime, function () {
                 document.getElementById('root').innerHTML = '';
                 alert("Time is up");
@@ -339,18 +402,18 @@
                 </div>
                 <div class=searchPage__results>
                     <p class=searchPage__resultCount>About 989,000,000 results (0.61 seconds)
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://green.harvard.edu/tools-resources/poster/top-5-steps-reduce-your-energy-consumption>https://green.harvard.edu/tools-resources/poster/top-5-steps-reduce-your-energy-consumption</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://green.harvard.edu/tools-resources/poster/top-5-steps-reduce-your-energy-consumption>
                             <h2>Top 5 Steps to Reduce Your Energy Consumption</h2>
                         </a>
                         <p class=searchPage__resultSnippet>Every October is Energy Awareness Month. Take these steps to
                             help reduce your energy consumption. 1. Shutdown your computer .</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.energy.gov/energysaver/reducing-electricity-use-and-costs>https://www.energy.gov/energysaver/reducing-electricity-use-and-costs</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.energy.gov/energysaver/reducing-electricity-use-and-costs>
                             <h2>Reducing Electricity Use and Costs - Department of Energy</h2>
                         </a>
@@ -358,9 +421,9 @@
                             kWh/month. If you use more, ... There are many ways you can reduce electricity use in your
                             home:.</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.sciencedirect.com/topics/computer-science/lower-energy-consumption>https://www.sciencedirect.com/topics/computer-science/lower-energy-consumption</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.sciencedirect.com/topics/computer-science/lower-energy-consumption>
                             <h2>Lower Energy Consumption - an overview - ScienceDirect.com</h2>
                         </a>
@@ -368,27 +431,27 @@
                             are three of the node-level challenges of smart objects. Taken together, these challenges
                             translate&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.anspblog.org/reduce-your-household-energy-use />https://www.anspblog.org/reduce-your-household-energy-use/</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.anspblog.org/reduce-your-household-energy-use />
                         <h2>Reduce Your Household Energy Use</h2></a>
                         <p class=searchPage__resultSnippet>Aug 4, 2020 — Cutting back on energy consumption reduces the
                             amount of electricity that power plants have to make . man at fridge Minimize the amount of
                             time&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.un.org/sustainabledevelopment/sustainable-consumption-production />https://www.un.org/sustainabledevelopment/sustainable-consumption-production/</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.un.org/sustainabledevelopment/sustainable-consumption-production />
                         <h2>Sustainable consumption and production - the United Nations</h2></a>
                         <p class=searchPage__resultSnippet>Sustainable consumption and production is about doing more
                             and better with less. It is also about decoupling economic growth from environmental
                             degradation,&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.mobil.com/en/sap/personal-vehicles/car/vehicle-maintenance/reduce-fuel-consumption>https://www.mobil.com/en/sap/personal-vehicles/car/vehicle-maintenance/reduce-fuel-consumption</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.mobil.com/en/sap/personal-vehicles/car/vehicle-maintenance/reduce-fuel-consumption>
                             <h2>10 ways to reduce fuel consumption - Mobil</h2>
                         </a>
@@ -396,18 +459,18 @@
                             revolutions per minute (RPM) and will reduce your fuel consumption. Practice predictive
                             driving . Look&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://believe.earth/en/how-to-reduce-energy-consumption />https://believe.earth/en/how-to-reduce-energy-consumption/</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://believe.earth/en/how-to-reduce-energy-consumption />
                         <h2>How to reduce energy consumption - Believe Earth</h2></a>
                         <p class=searchPage__resultSnippet>Dec 14, 2018 — LET THE SUN SHINE IN · BLACK COMPUTER SCREEN ·
                             KITCHEN LAYOUT · BETTER BULBS · CHOOSE EFFICIENT APPLIANCES · USE LESS AIR CONDITIONING · DO
                             NOT WASTE&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://www.constellation.com/solutions/for-your-small-business/goals/19-business-energy-savings-tips.html>https://www.constellation.com/solutions/for-your-small-business/goals/19-business-energy-savings-tips.html</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://www.constellation.com/solutions/for-your-small-business/goals/19-business-energy-savings-tips.html>
                             <h2>How to Lower Your Small Business Electricity Bill</h2>
                         </a>
@@ -415,18 +478,18 @@
                             time , it will help to make the process of saving on small business energy costs a little
                             more&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://liveslowrunfar.com/blog/20-ways-save-money-and-reduce-consumption />https://liveslowrunfar.com/blog/20-ways-save-money-and-reduce-consumption/</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://liveslowrunfar.com/blog/20-ways-save-money-and-reduce-consumption />
                         <h2>20 Ways to Save Money (And Reduce Consumption)</h2></a>
                         <p class=searchPage__resultSnippet>Oct 16, 2019 — 20 Ways to Save Money (And Reduce Consumption)
                             · 1. Bring lunch to work · 2. Eat plant based and in season · 3. Unsubscribe to emails · 4.
                             Track&nbsp;...</p>
                     </div>
-                    <div class=searchPage__result><a
+                    <div class=searchPage__result><a target="_blank"
                             href=https://publications.aap.org/pediatrics/article/143/4/e20190282/37217/Public-Policies-to-Reduce-Sugary-Drink-Consumption>https://publications.aap.org/pediatrics/article/143/4/e20190282/37217/Public-Policies-to-Reduce-Sugary-Drink-Consumption</a><a
-                            class=searchPage__resultTitle
+                            target="_blank" class=searchPage__resultTitle
                             href=https://publications.aap.org/pediatrics/article/143/4/e20190282/37217/Public-Policies-to-Reduce-Sugary-Drink-Consumption>
                             <h2>Public Policies to Reduce Sugary Drink Consumption in ...</h2>
                         </a>
