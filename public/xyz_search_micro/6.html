@@ -1,933 +1,2297 @@
 
 <!DOCTYPE html>
+<html lang="en">
+<head>
 
-<html class="no-js" lang="en">
-<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><title>
-	NEA | Food Waste Management Strategies
-</title><meta id="page_description" name="description" content="Prevent and reduce food wastage at source, redistribute unsold/excess food, recycle or treat food waste, recover energy
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w.GATrackingId='UA-204790488-93';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayer','GTM-TBRKMPJ');</script>
+				<!-- End Google Tag Manager --><!-- Google Tag Manager for GA4 -->
+				<script>(function(w,d,s,l,i){w.GAMeasurementID='G-1B959Y7RH6';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayerGA4','GTM-K73C5PS');</script>
+				<!-- End Google Tag Manager for GA4 -->
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+	<script>
+		function populateAntiForgery(token) {
+			var input = document.createElement("input");
+			input.name = "__RequestVerificationToken";
+			input.type = "hidden";
+			input.value = token;
+			var absPat = /^https?:\/\/|^\/\//i;
+			var forms = document.getElementsByTagName("form");
+			for (var i = 0; i < forms.length; i++) {
+				if (forms[i].method == "post" &&
+					!forms[i].querySelector('[name="__RequestVerificationToken"]') &&
+					!absPat.test(forms[i].getAttribute("action"))) {
+					forms[i].appendChild(input.cloneNode());
+				}
+			}
+		}
+
+		function getAntiForgeryToken(callback, error) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "/antiforgery");
+			xhr.addEventListener("load", function() {
+				try {
+					if (this.status !== 200) {
+						throw Error("Invalid status. Could not retrieve antiforgery token.");
+		}
+					var obj = JSON.parse(this.responseText);
+					callback(obj.token);
+				} catch (e) {
+					typeof error === "function" && error(e);
+				}
+			});
+			xhr.send();
+		}
+
+		getAntiForgeryToken(function(token) {
+			if (document.readyState === "complete"
+				|| document.readyState === "loaded" 
+				|| document.readyState === "interactive") {
+				populateAntiForgery(token);
+				return;
+			}
+			document.addEventListener("DOMContentLoaded", function() {
+				populateAntiForgery(token);
+			}, false);
+		}, console.error);
+			</script>
+			
+	
+<script type="text/javascript">
+		window.departmentHeader = {};
+		window.pageSectionTracker = {"PageSectionTrackerId":5634,"PageSectionTrackerName":"Solid Waste and Recycling"};
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = false;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_1303294.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+	<meta name="category0" content="Home" />
+<meta name="category1" content="Government" />
+<meta name="category2" content="Divisions  " />
+<meta name="category3" content="Solid Waste and Recycling" />
+<meta name="category4" content="Recycling Information" />
+<meta name="category5" content="Waste Reduction" />
+<meta name="category6" content="Reducing Food Waste" />
+
+	
+	<meta name="theme-color" content="#3e6194">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Reducing Food Waste | Frederick County MD - Official Website</title>
+	
+		<meta name="description" content="">
+		<meta name="keywords" content="recycle,waste,food,green,sustainable,Frederick,blue bin,compost,composting,recycling,trash">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '350px';
+	var order = '';
+//--></script>
+	
+	<link href="/1492061789.css" rel="stylesheet" type="text/css" />	<link href="/-1998599822.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/248816995.js" type="text/javascript"></script>
+	
+	
+	
+	
 
 
 
 
-" /><meta name="viewport" content="width=device-width,initial-scale=1" /><link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
 
-    <!-- Web Mobile -->
-    <link rel="apple-touch-icon" href="/apple-icon.png" /><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" /><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" /><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" /><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" /><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" /><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" /><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" /><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" /><link rel="manifest" href="/assets/images/web_mobile/manifest.json" /><link rel="stylesheet" href="../../../../assets/styles/sgdsnea.css" /><link rel="stylesheet" href="../../../../assets/styles/all.min.css" /><link rel="stylesheet" href="../../../../assets/styles/main.css" />
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide hideContent" >
 
-    <!-- SGDS Masthead -->
-    <script
-        type="module"
-        src="/assets/scripts/sgds-masthead.js">
-    </script>
+	<script>jQuery(document).click(function (event) {
+	var target = jQuery(event.target);
+	if (target.attr('src') && target.parents('.image').length && target.parents('.widget').length) {
+		var text = target.attr('title');
+		
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Image',
+				eventAction: 'Image - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.is('button') || target.hasClass('button') || target.parents().hasClass('button')) {
+		var text = "";
+		if (target.parents('.button')[0]) {
+			text = target.parents('.button')[0].text;
+		} else if (target.text().length) {
+			text = target.text();
+		} else if (target.attr('title').length) {
+			text = target.attr('title');
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Button',
+				eventAction: 'Button - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetCustomHtml').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Custom Html',
+				eventAction: 'Custom Html Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.editor').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Editor',
+				eventAction: 'Editor Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.GraphicLinks').length) {
+		var text = "";
+		var targetGraphicLink = target;
+		if (target.hasClass('widgetGraphicLinksLink')) {
+			targetGraphicLink = jQuery(target.children()[0]);
+		}
+		if (targetGraphicLink.hasClass('text')) {
+			text = targetGraphicLink.text();
+		} else if (targetGraphicLink.attr('src').length) {
+			if (targetGraphicLink.attr('alt').length) {
+				text = targetGraphicLink.attr('alt');
+			} else {
+				text = targetGraphicLink.attr('src');
+			}
+		} else {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Graphic Links',
+				eventAction: 'Graphic Link - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.InfoAdvanced').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Info Advanced',
+				eventAction: 'Info Advanced Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.list').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'List',
+				eventAction: 'List Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.megaMenuItem').length || target.parents('.topMenuItem').length) {
+		var megaMenuText = jQuery('.topMenuItem.mouseover').find('span').text();
+		var breadCrumbs = [];
+		jQuery('.breadCrumbs > li').each(function () {
+			 breadCrumbs.push(this.textContent);
+		});
+		var pageTitle = breadCrumbs.join('>');
+		var subTitleText = target.parents('.megaMenuItem').children('.widgetTitle').children().text();
+		var text = "";
+		if (pageTitle) {
+			text += pageTitle + " | ";
+		} else {
+			text += document.title + ' - ';
+		}
+		if (target.text() == "" && megaMenuText == "") {
+			text += "N/A";
+		} else if (target.text().length && megaMenuText.length) {
+			if (megaMenuText == target.text()) {
+				text += megaMenuText;
+			} else {
+				text += megaMenuText + " - " + subTitleText + " - " + target.text();
+			}
+		} else if (target.text() == "") {
+			text += megaMenuText;
+		} else {
+			text += target.text();
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Mega Menu',
+				eventAction: 'Mega Menu : ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetNewsFlash').length && target.parents('.widgetItem').length) {
+		var text = jQuery(target.parents('.widgetItem')[0]).find('.widgetTitle').children().text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'News Flash',
+				eventAction: 'News Flash - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.hasClass('widgetQuickLinksLink') || target.find('.widgetQuickLinksLink').length) {
+		var text = target.text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Quick Links',
+				eventAction: 'Quick Links - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.attr('src') && target.parents('.cpSlideshow').length) {
+		var text = target.attr('title');
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Slideshow',
+				eventAction: 'Slideshow - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetText').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Text',
+				eventAction: 'Text Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+});</script>
 
-    <!-- WOGAA -->
-    <script src="https://assets.wogaa.sg/scripts/wogaa.js"></script>
-
-    <!-- Twitter --> 
-    <meta id="tw_card"name="twitter:card" content="summary">
-    <meta id="tw_title" name="twitter:title" content="Food Waste Management Strategies" /><meta id="tw_description" name="twitter:description" content="Prevent and reduce food wastage at source, redistribute unsold/excess food, recycle or treat food waste, recover energy
-
-
-
-
-" /><meta id="tw_imageUrl" name="twitter:image:src" content="http://www.nea.gov.sg/images/default-source/our-serivces/waste-management/handy-guide.png?MaxWidth=169&amp;MaxHeight=239&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=DFA44B412317ECE6987F1318B3C0090D389553D2" /> 
-    <!-- Facebook --> 
-    <meta id="fb_title" property="og:title" content="Food Waste Management Strategies" /><meta id="fb_description" property="og:description" content="Prevent and reduce food wastage at source, redistribute unsold/excess food, recycle or treat food waste, recover energy
-
-
-
-
-" /><meta id="fb_imageUrl" property="og:image" content="http://www.nea.gov.sg/images/default-source/our-serivces/waste-management/handy-guide.png?MaxWidth=169&amp;MaxHeight=239&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=DFA44B412317ECE6987F1318B3C0090D389553D2" /><meta id="fb_imageWidth" property="og:image:width" content="250" /><meta id="fb_imageHeight" property="og:image:height" content="250" /><meta id="fb_url" property="og:url" content="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-management-strategies" /><meta property="fb:admins" /><meta name="facebook-domain-verification" content="07qfp6p53tgdwjamsdhb98wb6nnefp" />
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NP59Q69');</script>
-    <!-- End Google Tag Manager -->
-<script type="text/javascript" src="/assets/scripts/sketch.js"></script><script type="text/javascript" src="/assets/scripts/modernizr-custom.js"></script><script type="text/javascript" src="/assets/scripts/main.js"></script><script type="text/javascript">
-$ = jQuery.noConflict();
-</script><script type="text/javascript">
-function lateLoadChatFile() {
-  setTimeout(() => {
-    const bodyTag = document.getElementsByTagName("body")[0];
-    
-    // Create link element to import chat.css file and append it on the body element
-    let linkTag = document.createElement("link"); 
-    linkTag.href = "https://webchat.vica.gov.sg/static/css/chat.css"; 
-    linkTag.type = "text/css"; 
-    linkTag.rel = "stylesheet"; 
-    linkTag.referrerPolicy = "origin"; 
-    bodyTag.appendChild(linkTag);
-    
-    // Create script element to import chat.js file and append it on the body element
-    let scriptTag = document.createElement("script"); 
-    scriptTag.src = "https://webchat.vica.gov.sg/static/js/chat.js"; 
-    scriptTag.type = "text/javascript"; 
-    scriptTag.referrerPolicy = "origin"; 
-    scriptTag.defer = true; 
-    bodyTag.appendChild(scriptTag);
-  }, 5000);
-}
-</script><link rel="canonical" href="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-management-strategies" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nOwcRLA17O-loIxGAkl8OyYLM-olt2c7iHH0AuOhkOXnq_qArjrniyUOx-64p6X6TtWl5rR1ZK5Xr_1XvA0lVJ3rFXYihh-0F88wbvBgOcyR0&amp;t=638227541199744065&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d13.3.7647.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a3105d554-a2f7-41dc-9f71-ac414da2be04%3a7a90d6a" type="text/css" rel="stylesheet" /><meta name="keywords" content="food waste, reduce, recycle, prevent waste, prevent food waste, donate food, unsold food, composting, diy composting, composting food waste, food waste treatment systems, waste-to-energy plants" /></head>
-<body>
-<sgds-masthead></sgds-masthead>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP59Q69"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <form method="post" action="./food-waste-management-strategies" id="aspnetForm">
-<div class="aspNetHidden">
-<input type="hidden" name="ctl21_TSM" id="ctl21_TSM" value="" />
-<input type="hidden" name="ctl22_TSSM" id="ctl22_TSSM" value="" />
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="g3ngWFoqMJiOm8ImFtnWn4kC/lZruXCc0v9T5hzdGwGN6jObkk8IvzcfabgONzFCIFoeJiGTE/U/o9Iq6RRtrN22ZRmqtXxi8TL6INrqRhs=" />
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cc127a8e52-da65-414f-a071-d9598d053897" target="_self" class="skipToContentLink">Skip to Main Content</a>
 </div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
 
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['aspnetForm'];
-if (!theForm) {
-    theForm = document.aspnetForm;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+	
 
+<link href="/745732998.css" rel="stylesheet" type="text/css" />
 
-<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMdYEsCHmLSovwDpxmCw0GUzX_Hr5B89aQVpxN0Q-5LwEvDbCJsFzUl8VZXQ2yJggA2&amp;t=638240631755514788" type="text/javascript"></script>
-
-
-<script type="text/javascript">
-//<![CDATA[
-var __cultureInfo = {"name":"en","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402271999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"A.D.",null,0]};//]]>
-</script>
-
-<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl21_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen%3a7c62b5ab-ce5f-4af2-9208-7ca632e5b845%3aea597d4b%3ab25378d2" type="text/javascript"></script>
-<script src="../../../../assets/scripts/jquery.min.js" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8EB4A355" />
-	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-</div><script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ctl21', 'aspnetForm', [], [], [], 90, 'ctl00$ctl00');
-//]]>
-</script>
-<input type="hidden" name="ctl00$ctl00$ctl21" id="ctl21" />
-<script type="text/javascript">
-//<![CDATA[
-Sys.Application.setServerId("ctl21", "ctl00$ctl00$ctl21");
-Sys.Application._enableHistoryInScriptManager();
-//]]>
-</script>
-
-        <!--[if lt IE 11]>
-        <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
-        <![endif]--><a href="#main" class="skip-link vh">Skip to main</a>
-        <header id="header" class="header">
-            <div class="nav">
-                
-    
-
-
-
-<nav class="navbar sgds-menu">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="logo"><img src="/assets/images/design/logo.png" alt="National Environment Agency"></a>
+<div tabindex="0"></div>
+<div id="SplashMessageWrapper" class="cp-Splash-wrapper">
+    <div role="dialog" aria-labelledby="cp-Splash-title" aria-describedby="editorContentDesc" aria-modal="true" tabindex="-1" id="SplashMessage" class="hidden cp-Splash cp-Splash--modal is-open">
+        <div class="cp-Splash-header">
+            <h3 class="cp-Splash-title" id="cp-Splash-title">Loading</h3>
+            <button class="cp-Splash-Btn cp-Splash-close" aria-label="Close this modal" title="Close this window">
+                <svg id="iconClose" viewBox="0 0 25 25">
+                    <polygon style="fill:currentcolor"
+                             points="18.806,6.98 18.075,6.248 12.532,11.792 6.989,6.248 6.257,6.98 11.786,12.508 6.212,18.084 6.943,18.815 12.532,13.224 18.12,18.815 18.851,18.084 13.277,12.508"></polygon>
+                </svg>
+            </button>
         </div>
-        <div class="menu-list">
-            <ul id="mainnav" class="navbar-menu nav-container">
-                <li class="navbar-item is-hidden-desktop sgds-search">
-                    <div class="field has-addons">
-                        <div class="control has-icons-right is-expanded">
-                            <input class="input is-fullwidth" id="siteSearchMobile" type="text" placeholder="Search for information" name="query">
-                            <div class="addons">
-                                <button type="button" id="startSpeechRecognition" class="mic-search mic-button"><span class="visuallyhidden">Voice search</span><i class="icon-mic is-size-6"></i></button>
-                                <button type="submit" class="btn-search sgds-btn-search"><span class="visuallyhidden">Submit search</span><i class="sgds-icon icon-search is-size-6 search-bar"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable is-mega">
-            <a href="/our-services" target="_self" class="navbar-link nav__item is-uppercase">
-                Our Services
-            </a>
-            <i class="sgds-icon sgds-icon-chevron-down dropdown-icon"></i>
-            <div class="navbar-dropdown">
-                <div class="container">
-                            <a class="navbar-item" href="/our-services/after-death" target="_self">After Death</a>
-        <a class="navbar-item" href="/our-services/climate-change-energy-efficiency" target="_self">Climate Change &amp; Energy Efficiency</a>
-        <a class="navbar-item" href="/our-services/dengue-zika" target="_self">Dengue &amp; Zika</a>
-        <a class="navbar-item" href="/our-services/development-control" target="_self">Development Control</a>
-        <a class="navbar-item" href="/our-services/hawker-management" target="_self">Hawker Management</a>
-        <a class="navbar-item" href="/our-services/pest-control" target="_self">Pest Control</a>
-        <a class="navbar-item" href="/our-services/pollution-control" target="_self">Pollution Control</a>
-        <a class="navbar-item" href="/our-services/port-health" target="_self">Port Health</a>
-        <a class="navbar-item" href="/our-services/public-cleanliness" target="_self">Public Cleanliness</a>
-        <a class="navbar-item" href="/our-services/radiation-safety" target="_self">Radiation Safety</a>
-        <a class="navbar-item" href="/our-services/smoking-prohibition" target="_self">Smoking Prohibition</a>
-        <a class="navbar-item" href="/our-services/waste-management" target="_self">Waste Management </a>
-        <a class="navbar-item" href="/our-services/weather" target="_self">Weather</a>
-        <a class="navbar-item" href="/our-services/towards-zero-waste" target="_self">Towards Zero Waste</a>
-
-                </div>
+        <div class="cp-Splash-body">
+            <div class="cp-Splash-Prose editorContent fr-view fr-element" id="editorContentDesc">
+                <!-- Content from the Froala Editor will go here. -->
+                Loading
             </div>
-        </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable is-mega">
-            <a href="/corporate-functions/who-we-are" target="_self" class="navbar-link nav__item is-uppercase">
-                Who We Are
-            </a>
-            <i class="sgds-icon sgds-icon-chevron-down dropdown-icon"></i>
-            <div class="navbar-dropdown">
-                <div class="container">
-                            <a class="navbar-item" href="/corporate-functions/who-we-are/about-us" target="_self">About Us</a>
-        <a class="navbar-item" href="/corporate-functions/who-we-are/our-purpose" target="_self">Our Purpose</a>
-        <a class="navbar-item" href="/corporate-functions/who-we-are/people" target="_self">People</a>
-        <a class="navbar-item" href="/corporate-functions/who-we-are/groups-and-divisions" target="_self">Groups and Divisions</a>
-        <a class="navbar-item" href="/corporate-functions/who-we-are/careers" target="_self">Careers</a>
-        <a class="navbar-item" href="/corporate-functions/who-we-are/achievements" target="_self">Achievements</a>
+        </div>
+        <div class="cp-Splash-footer">
+            <button class="cp-Splash-Btn cp-Splash-Btn--NoShow">Do Not Show Again</button>
+            <button class="cp-Splash-Btn cp-Splash-Btn--Close">Close</button>
+        </div>
+    </div>
+</div>
+<div tabindex="0"></div>
 
-                </div>
-            </div>
-        </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable is-mega">
-            <a href="/programmes-grants" target="_self" class="navbar-link nav__item is-uppercase">
-                Programmes &amp; Grants
-            </a>
-            <i class="sgds-icon sgds-icon-chevron-down dropdown-icon"></i>
-            <div class="navbar-dropdown">
-                <div class="container">
-                            <a class="navbar-item" href="/programmes-grants/campaigns" target="_self">Campaigns</a>
-        <a class="navbar-item" href="/programmes-grants/courses" target="_self">Courses</a>
-        <a class="navbar-item" href="/programmes-grants/events-calendar" target="_self">Events</a>
-        <a class="navbar-item" href="/programmes-grants/grants-and-awards" target="_self">Grants and Awards</a>
-        <a class="navbar-item" href="/programmes-grants/learning-journeys" target="_self">Learning Journeys</a>
-        <a class="navbar-item" href="/programmes-grants/programmes" target="_self">Programmes</a>
-        <a class="navbar-item" href="/programmes-grants/schemes" target="_self">Schemes</a>
-        <a class="navbar-item" href="/programmes-grants/volunteering" target="_self">Volunteering</a>
+<script src="/Assets/Scripts/APIClient.js"></script>
+<script src="/Assets/Scripts/MomentJs/2.29.1/moment.min.js"></script>
+<script src="/Assets/Scripts/SplashModal/SplashModalRender.js"></script>
+<script>
 
-                </div>
-            </div>
-        </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable is-mega">
-            <a href="/media" target="_self" class="navbar-link nav__item is-uppercase">
-                Media
-            </a>
-            <i class="sgds-icon sgds-icon-chevron-down dropdown-icon"></i>
-            <div class="navbar-dropdown">
-                <div class="container">
-                            <a class="navbar-item" href="/media/news" target="_self">News</a>
-        <a class="navbar-item" href="/media/videos" target="_blank">Videos</a>
-        <a class="navbar-item" href="/media/nea-vox" target="_self">NEA Vox</a>
-        <a class="navbar-item" href="/media/podcast" target="_self">Podcast</a>
-        <a class="navbar-item" href="/media/readers-letters" target="_self">Readers&#39; Letters </a>
+		$(document).ready(function () {
+			var filter = {
+				targetId: '8199',
+				targetType: 1
+			}
 
-                </div>
-            </div>
-        </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable is-mega">
-            <a href="/corporate-functions/resources" target="_self" class="navbar-link nav__item is-uppercase">
-                Resources
-            </a>
-            <i class="sgds-icon sgds-icon-chevron-down dropdown-icon"></i>
-            <div class="navbar-dropdown">
-                <div class="container">
-                            <a class="navbar-item" href="/corporate-functions/resources/circulars" target="_self">Circulars</a>
-        <a class="navbar-item" href="/corporate-functions/resources/educational-materials" target="_self">Educational Materials</a>
-        <a class="navbar-item" href="/corporate-functions/resources/facts-figures" target="_self">Facts and Figures</a>
-        <a class="navbar-item" href="/corporate-functions/resources/legislation-international-law" target="_self">Legislation and International Law</a>
-        <a class="navbar-item" href="/corporate-functions/resources/medium-term-note-programme" target="_self">Medium Term Note Programme</a>
-        <a class="navbar-item" href="/corporate-functions/resources/practices-and-guidelines" target="_self">Practices and Guidelines</a>
-        <a class="navbar-item" href="/corporate-functions/resources/publications" target="_self">Publications</a>
-        <a class="navbar-item" href="/corporate-functions/resources/research" target="_self">Research </a>
-        <a class="navbar-item" href="/corporate-functions/resources/tender-notices" target="_self">Tender Notices</a>
+            new SplashModalRender().triggerRender(filter);
+		});
+</script>
+	
+	
+<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="6" />
+	<input type="hidden" id="hdnContentCollectionID" value="24a6da52-831a-456b-8a00-862f978c0021" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="13" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="8199" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
 
-                </div>
-            </div>
-        </li>
-        <li class="navbar-item is-expanded has-dropdown is-hoverable">
-                <a href="/e-services" target="_blank" class="navbar-link nav__item is-uppercase" rel="noopener noreferrer">
-                    E-Services
-                </a>
-        </li>
-            </ul>
-<div class="nav-extension-mobile">
-                <!-- Mobile Content: Put this in the content block START -->
-                <!-- Stacked at top as links -->
-                <ul class="social-links">
-           <li><a href="https://play.google.com/store/apps/details?id=sg.gov.nea&amp;hl=en" target="_blank"><span class="icon smallicon-android"></span> myENV on Android</a></li>
-           <li><a href="https://apps.apple.com/sg/app/myenv/id444435182" target="_blank"><span class="icon smallicon-iphone"></span> myENV on iPhone</a></li>
-            
-             
-                </ul>
-                <!-- Stacked at bottom as social icons -->
-                <div class="mobile-socials">
-                    <span style="padding-right: 1rem;">Follow us on: </span>
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/NEASingapore" aria-label="facebook" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                        <li><a href="https://twitter.com/NEAsg" aria-label="twitter" target="_blank"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="https://www.instagram.com/nea_sg/" aria-label="instagram" target="_blank"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="https://www.linkedin.com/company/national-environment-agency" aria-label="linkedin" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC-tjEFkd0tT2VpD5vbjyAKA/videos" aria-label="youtube" target="_blank"><span class="fab fa-youtube"></span></a></li>
-                        <li><a href="https://t.me/NEASingapore" aria-label="telegram" target="_blank"><span class="fab fa-telegram-plane"></span></a></li>
-                        <li><a href="https://www.tiktok.com/@nea_sg" aria-label="tiktok" target="_blank"><span class="fab fa-tiktok"></span></a></li>
-                    </ul>
-                </div>
-                <!-- Mobile Content: Put this in the content block END -->
-            </div>        </div>
-        <ul class="nav-container mobile-navbar-menu">
-            <li class="navbar-item has-dropdown is-hoverable notification">
-                <button class="sgds-button is-white btn-notification js-notification" type="button" aria-label="notification button">
-                    <span class="icon smallicon-notifications"></span>
-                    <i id="notification-circle"></i>
-                </button>
-            </li>
-            <li class="navbar-item has-dropdown is-hoverable is-hidden-touch">
-                <button id="search-activate" class="sgds-button is-white" type="button" aria-label="search button">
-                    <span class="sgds-icon sgds-icon-search"></span>
-                </button>
-            </li>
-            <li>
-                <div class="navbar-burger burger js-mobile-menu" data-target="mainnav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </li>
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP mui-fixed" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create a Website Account</a> <span class="welcomeMessage">- Manage notification subscriptions, save form progress and more. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Website Sign In</span></a></li>
         </ul>
     </div>
-</nav>
-
-<div class="sgds-search container-fluid is-hidden-touch search-bar" id="searchbar">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="field has-addons padding--sm">
-                    <div class="control has-icons-left is-expanded">
-                        <input class="input is-fullwidth is-borderless is-shadowless" id="siteSearch" type="text" placeholder="Search for information" name="query" autocomplete="off">
-                        <span class="icon is-left">
-                            <i class="sgds-icon sgds-icon-search is-size-4 search-bar"></i>
-                        </span>
-                    </div>
-                    <div class="control">
-                        <button type="button" class="sgds-button is-primary sgds-btn-search" id="desktop-search">SEARCH</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-
-<div class="sgds-menu nav-extension">
-    <div class="container">
-        <!-- Desktop Content: Put this in the content block START -->
-        <!-- Appears on left side as social icons -->
-        <div class="" style="display:flex;align-items:center">
-            <span style="padding-right: 1rem;">Follow us on: </span>
-            <ul class="social-icons">
-                <li><a href="https://www.facebook.com/NEASingapore" aria-label="facebook" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                <li><a href="https://twitter.com/NEAsg" aria-label="twitter" target="_blank"><span class="fab fa-twitter"></span></a></li>
-                <li><a href="https://www.instagram.com/nea_sg/" aria-label="instagram" target="_blank"><span class="fab fa-instagram"></span></a></li>
-                <li><a href="https://www.linkedin.com/company/national-environment-agency" aria-label="linkedin" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
-                <li><a href="https://www.youtube.com/channel/UC-tjEFkd0tT2VpD5vbjyAKA/videos" aria-label="youtube" target="_blank"><span class="fab fa-youtube"></span></a></li>
-                <li><a href="https://t.me/NEASingapore" aria-label="telegram" target="_blank"><span class="fab fa-telegram-plane"></span></a></li>
-                <li><a href="https://www.tiktok.com/@nea_sg" aria-label="tiktok" target="_blank"><span class="fab fa-tiktok"></span></a></li>
-                            </ul>
-        </div>
-        <!-- Appears on right side as links -->
- <ul class="social-links">
-<li>
-             <span>Get the app: </span>
-</li>
-           <li><a href="https://play.google.com/store/apps/details?id=sg.gov.nea&amp;hl=en" title="" class="" target="_blank"><em class="icon smallicon-android"></em>&nbsp;Android</a></li>
-           <li><a href="https://apps.apple.com/sg/app/myenv/id444435182" title="" class="" target="_blank"><em class="icon smallicon-iphone"></em>&nbsp;iPhone</a></li>
-            
-        </ul>
-        <!-- Desktop Content: Put this in the content block END -->
-    </div>
-</div><div id="gtx-trans" style="position: absolute; left: 26px; top: 258.688px;"><div class="gtx-trans-icon"></div></div>
-
-<div id="heavyRainDiv" class="notification-bar" style="display: none;">
-
-</div>
-
 <script>
     $(document).ready(function () {
-        $.ajax({
-            url: '/api/HeavyRainWarning/GetData/' + window.GenerateTimeStamp(window.GenerateGuid()),
-            type: 'GET',
-            success: function (data) {
-                if (data != null) {
-                    $("#heavyRainDiv").addClass("rain-alert-notification").append("<div class=\"container\"><p>"
-                        + data.warning.replace(/<br>/g, ' ') +
-                        "</p><button type=\"button\" class=\"js-close-notification\"><span class=\"visuallyhidden\">Close notification</span><i class=\"icon icon-close\"></i></button></div>");
-                }
-            },
-            error: function (param) {
-                console.log(param);
-            }
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
         });
 
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
     })
 </script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="bodyContainerTS">
+<!-- Header Container --><header data-cpRole="structuralContainer" id="headerContainerTS" class="fixedTopTS">
+<div class="siteWrap3"><div data-cpRole="banner" id="bannerLogoTS" class="bannerLogoTS empty">
 
 
 
-            </div>
-        </header>
-        <main id="main" class="main">
-            
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_blank"><img alt="Frederick County MD Homepage" class="bannerObject" height="86" src="/ImageRepository/Document?documentID=345363" width="467" /></a>
+
+</div><div data-cpRole="contentContainer" id="searchTS">	<div id="ccf0b7a688-7387-45dc-b974-f739d88ef0f7" data-containerid="f0b7a688-7387-45dc-b974-f739d88ef0f7" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="866ad64f-c466-4769-b63b-0c29aee246bd">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col24 first last id9cac9fd3-38a6-4d2b-8de5-099ea689952d" style="" data-widgetcontainerid="9cac9fd3-38a6-4d2b-8de5-099ea689952d">
+	
+<div data-widget-id="f990e06f-9b7d-417b-88d5-958d786cc9c8" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButtonf990e06f-9b7d-417b-88d5-958d786cc9c8").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDeptf990e06f-9b7d-417b-88d5-958d786cc9c8").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDeptf990e06f-9b7d-417b-88d5-958d786cc9c8").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDeptf990e06f-9b7d-417b-88d5-958d786cc9c8").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (false) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin20 widgetOptionSet34" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBoxf990e06f-9b7d-417b-88d5-958d786cc9c8" cp5ph="true" id="searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search" title="Search" type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButtonf990e06f-9b7d-417b-88d5-958d786cc9c8" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=343619" data-image="/ImageRepository/Document?documentID=343620" src="/ImageRepository/Document?documentID=343620" /></a>
+
+			<label class="searchLabel" for="searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
     
-        <section class="header-banner">
-            <div class="content">
-                <div class="container">
-                    <h2 class="header-banner__title"><span>Food Waste Management</span><span class="subtitle"></span></h2>
-                </div>
-            </div>
-        </section>
-    
-    
-<section class="breadcrumb">
-    <div class="container">
-        <ol>
-                    <li class="breadcrumb__item"><a href="/" class="breadcrumb__link"><span>The National Environment Agency</span></a></li>
-                    <li class="breadcrumb__item"><a href="/our-services" class="breadcrumb__link"><span>Our Services</span></a></li>
-                    <li class="breadcrumb__item"><a href="/our-services/waste-management" class="breadcrumb__link"><span>Waste Management </span></a></li>
-                    <li class="breadcrumb__item"><a href="/our-services/waste-management/3r-programmes-and-resources" class="breadcrumb__link"><span>3R Programmes and Resources</span></a></li>
-                    <li class="breadcrumb__item"><a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management" class="breadcrumb__link"><span>Food Waste Management</span></a></li>
-                    <li class="breadcrumb__item"><a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-management-strategies" class="breadcrumb__link is-active"><span>Food Waste Management Strategies</span></a></li>
-        </ol>
-    </div>
-</section>
-<div id="mainContent_breadcrumb_TA8639BCE030_Col00" class="sf_colsIn container" data-sf-element="Container"><div class='sfContentBlock'>
-
-</div>
-</div>
-
-    
-<div class="sf_cols container container--spt">
-    <div class="sf_colsOut sf_1col_1_100" style="width: 100%;" data-placeholder-label="side-nav and article">
-        <div id="mainContent_mainContent_TFA5CC790002_Col00" class="sf_colsIn sf_1col_1in_100">
-    <div class="sf_colsOut sf_2cols_1_25">
-        <div id="mainContent_mainContent_TFA5CC790005_Col00" class="sf_colsIn sf_2cols_1in_25 side-nav" data-sf-element="Column 1" data-placeholder-label="side nav">
-<div class="side-nav">
-    <div class="container">
-        <ul class="side-nav__list no-mobile">
-     <li class="">
-        <a href="/our-services/waste-management/overview" class="side-nav__link">Overview</a>
-
-    </li>
-     <li class="is-active">
-        <a href="/our-services/waste-management/3r-programmes-and-resources" class="side-nav__link">3R Programmes and Resources</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling" class="side-nav__link">Waste Minimisation and Recycling</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-home" class="side-nav__link">At Home</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-school" class="side-nav__link">At School</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-work" class="side-nav__link">At Work</a>
-
-    </li>
-            </ul>
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/e-waste-management" class="side-nav__link">E-Waste Management</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/where-to-recycle-e-waste" class="side-nav__link">Where to Recycle E-Waste</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/national-voluntary-partnership-for-e-waste-recycling" class="side-nav__link">National Voluntary Partnership for E-Waste Recycling</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/ss-587" class="side-nav__link">SS 587</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/extended-producer-responsibility-(epr)-system-for-e-waste-management-system" class="side-nav__link">Extended Producer Responsibility (EPR) System for E-waste Management System</a>
-
-    </li>
-            </ul>
-    </li>
-     <li class="is-active">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management" class="side-nav__link">Food Waste Management</a>
-
-            <ul>
-     <li class="is-active">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-management-strategies" class="side-nav__link">Food Waste Management Strategies</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-distribution-organisations-local-recycling-facilities-and-suppliers" class="side-nav__link">Food Distribution Organisations, Local Recycling Facilities and Suppliers</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-valorisation" class="side-nav__link">Food Waste Valorisation</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-resource-valorisation-awards" class="side-nav__link">Food Resource Valorisation Awards </a>
-
-    </li>
-            </ul>
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/packaging-partnership-programmet" class="side-nav__link">Singapore Packaging Agreement</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/recycling-collection-points" class="side-nav__link">Recycling / Collection Points</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/national-recycling-programme" class="side-nav__link">National Recycling Programme</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/types-of-recyclables-and-recycling-processes" class="side-nav__link">Types of Recyclables and Recycling Processes</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/3r-guidebooks" class="side-nav__link">3R Guidebooks </a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/3r-fund" class="side-nav__link">3R Fund</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/3r-programmes-and-resources/reducing-our-use-of-disposables" class="side-nav__link">Reducing Our Use of Disposables</a>
-
-    </li>
-            </ul>
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-collection-systems" class="side-nav__link">Waste Collection Systems</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure" class="side-nav__link">Waste Management Infrastructure</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/tuas-marine-transfer-station" class="side-nav__link">Tuas Marine Transfer Station</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/semakau-landfill" class="side-nav__link">Semakau Landfill</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/semakau-landfill/waste-to-energy-and-incineration-plants" class="side-nav__link">Waste-To-Energy Incineration Plants</a>
-
-    </li>
-            </ul>
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/sarimbun-recycling-park" class="side-nav__link">Sarimbun Recycling Park</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/integrated-waste-management-facility" class="side-nav__link">Integrated Waste Management Facility</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/solid-waste-management-infrastructure" class="side-nav__link">Solid Waste Management Infrastructure</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility" class="side-nav__link">Refuse Disposal Facility</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal" class="side-nav__link">Waste Disposal</a>
-
-            <ul>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/general-waste-disposal-facility" class="side-nav__link">General Waste Disposal Facility</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/illegal-dumping" class="side-nav__link">Illegal Dumping</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/bulk-item-disposal-disposal-of-garden-wastes-and-dead-pets" class="side-nav__link">Disposal of Bulky Items, Garden Waste and Dead Pets</a>
-
-    </li>
-            </ul>
-    </li>
-            </ul>
-    </li>
-            </ul>
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/mandatory-waste-reporting" class="side-nav__link">Mandatory Waste Reporting</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/waste-statistics-and-overall-recycling" class="side-nav__link">Waste Statistics and Overall Recycling</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/reverse-vending-machines" class="side-nav__link">Reverse Vending Machines</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/mandatory-packaging-reporting" class="side-nav__link">Mandatory Packaging Reporting</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/donation-resale-and-repair-channels" class="side-nav__link">Donation, Resale and Repair Channels</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/beverage-container-return-scheme" class="side-nav__link">Beverage Container Return Scheme</a>
-
-    </li>
-     <li class="">
-        <a href="/our-services/waste-management/disposable-carrier-bag-charge" class="side-nav__link">Disposable Carrier Bag Charge</a>
-
-    </li>
-        </ul>
-        <div class="mobile-only">
-            <label for="sidenavmenu">You are now reading:</label>
-            <select id="sidenavmenu" onchange="this.options[this.selectedIndex].dataset.url && (window.location = this.options[this.selectedIndex].dataset.url);" class="js-redirect">
-    <option data-url="/our-services/waste-management/overview" >Overview</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources" >3R Programmes and Resources</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling" >Waste Minimisation and Recycling</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-home" >At Home</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-school" >At School</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/waste-minimisation-and-recycling/at-work" >At Work</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/e-waste-management" >E-Waste Management</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/where-to-recycle-e-waste" >Where to Recycle E-Waste</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/national-voluntary-partnership-for-e-waste-recycling" >National Voluntary Partnership for E-Waste Recycling</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/ss-587" >SS 587</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/e-waste-management/extended-producer-responsibility-(epr)-system-for-e-waste-management-system" >Extended Producer Responsibility (EPR) System for E-waste Management System</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/food-waste-management" >Food Waste Management</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-management-strategies" selected>Food Waste Management Strategies</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-distribution-organisations-local-recycling-facilities-and-suppliers" >Food Distribution Organisations, Local Recycling Facilities and Suppliers</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-waste-valorisation" >Food Waste Valorisation</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-resource-valorisation-awards" >Food Resource Valorisation Awards </option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/packaging-partnership-programmet" >Singapore Packaging Agreement</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/recycling-collection-points" >Recycling / Collection Points</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/national-recycling-programme" >National Recycling Programme</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/types-of-recyclables-and-recycling-processes" >Types of Recyclables and Recycling Processes</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/3r-guidebooks" >3R Guidebooks </option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/3r-fund" >3R Fund</option>
-    <option data-url="/our-services/waste-management/3r-programmes-and-resources/reducing-our-use-of-disposables" >Reducing Our Use of Disposables</option>
-    <option data-url="/our-services/waste-management/waste-collection-systems" >Waste Collection Systems</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure" >Waste Management Infrastructure</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/tuas-marine-transfer-station" >Tuas Marine Transfer Station</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/semakau-landfill" >Semakau Landfill</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/semakau-landfill/waste-to-energy-and-incineration-plants" >Waste-To-Energy Incineration Plants</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/sarimbun-recycling-park" >Sarimbun Recycling Park</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/integrated-waste-management-facility" >Integrated Waste Management Facility</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/solid-waste-management-infrastructure" >Solid Waste Management Infrastructure</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility" >Refuse Disposal Facility</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal" >Waste Disposal</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/general-waste-disposal-facility" >General Waste Disposal Facility</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/illegal-dumping" >Illegal Dumping</option>
-    <option data-url="/our-services/waste-management/waste-management-infrastructure/refuse-disposal-facility/waste-disposal/bulk-item-disposal-disposal-of-garden-wastes-and-dead-pets" >Disposal of Bulky Items, Garden Waste and Dead Pets</option>
-    <option data-url="/our-services/waste-management/mandatory-waste-reporting" >Mandatory Waste Reporting</option>
-    <option data-url="/our-services/waste-management/waste-statistics-and-overall-recycling" >Waste Statistics and Overall Recycling</option>
-    <option data-url="/our-services/waste-management/reverse-vending-machines" >Reverse Vending Machines</option>
-    <option data-url="/our-services/waste-management/mandatory-packaging-reporting" >Mandatory Packaging Reporting</option>
-    <option data-url="/our-services/waste-management/donation-resale-and-repair-channels" >Donation, Resale and Repair Channels</option>
-    <option data-url="/our-services/waste-management/beverage-container-return-scheme" >Beverage Container Return Scheme</option>
-    <option data-url="/our-services/waste-management/disposable-carrier-bag-charge" >Disposable Carrier Bag Charge</option>
-            </select>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-            
-        </div>
-    </div>
-    <div class="sf_colsOut sf_2cols_2_75">
-        <div id="mainContent_mainContent_TFA5CC790005_Col01" class="sf_colsIn sf_2cols_2in_75 rte" data-sf-element="Column 2" data-placeholder-label="article"><div class="sf_cols">
-    <div class="sf_colsOut sf_1col_1_100">
-        <div id="mainContent_mainContent_TFA5CC790008_Col00" class="sf_colsIn sf_1col_1in_100"><h1>Food Waste Management Strategies</h1>
-            
-        </div>
-    </div>
-</div><div class="sf_cols">
-    <div class="sf_colsOut sf_1col_1_100">
-        <div id="mainContent_mainContent_TFA5CC790007_Col00" class="sf_colsIn sf_1col_1in_100"><div class='sfContentBlock'><strong>Strategy 1: Prevent and reduce food wastage at source </strong><p>The preferred way to manage food waste is to avoid wasting food at the onset.&nbsp;</p> 
-  <p> NEA launched a Food Waste Reduction (FWR) outreach programme in November 2015 
-  to encourage the adoption of smart food purchase, storage and preparation habits that help consumers save money 
-  while reducing food wastage at source. <br></p> 
-  <p>The outreach programme features educational materials publicised on both print and social media platforms (e.g. newspapers, television, websites) and community-led initiatives, which included an educational skit.<br><br>NEA has developed various outreach materials for the FWR programme. Organisations who are keen to embark on their own FWR programme may tap on these resources. A list of available outreach materials is available <a href="https://www.cgs.gov.sg/resources" title="" class="" target="_blank">here</a>.<br><br>Everyone can play an active role and motivate friends and family to reduce food wastage at home. For easy-to-do and useful tips on how to reduce food wastage at home and when dining out, members of the public can download an online handy guide (<a href="/docs/default-source/envision/food-waste/love-your-food-handy-guide.pdf" title="Love Your Food Handy Guide">Love Your Food Handy Guide</a>&nbsp;[PDF, 2.76 Mb]). The guide provides useful suggestions on meal planning, food storage, as well as recipes and innovative ideas on how to use leftover food to create tasty dishes.</p><div style="text-align: center;"><img title="Love Your Food Handy Guide" src="/images/default-source/our-serivces/waste-management/handy-guide.png?MaxWidth=169&amp;MaxHeight=239&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=DFA44B412317ECE6987F1318B3C0090D389553D2" alt="Love Your Food Handy Guide [PDF, 4.82 Mb]" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;169&quot;,&quot;MaxHeight&quot;:&quot;239&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" data-displaymode="Custom"><br></div><p style="text-align: center;"><a href="/docs/default-source/envision/food-waste/love-your-food-handy-guide.pdf" title="Love Your Food Handy Guide">Love Your Food Handy Guide</a> [PDF, 2.76 Mb]</p><p>NEA commissioned a household waste study in 2016 to obtain quantitative data on the amount of waste disposed of by households and to understand public sentiments on food waste management. The study found that food waste accounted for about half of the waste disposed of by each Singapore household a day. Of this, more than half of the food waste could have been prevented through actions such as not over-ordering, over-buying or over-cooking. Rice, noodles and bread are found to be the most commonly wasted food items. More information on the household waste study can be found <a href="https://www.nea.gov.sg/media/news/news/index/half-of-food-waste-thrown-away-by-singapore-households-can-be-prevented-nea-household-waste-study" title="" class="" target="_blank">here</a>.<br><br>In addition, NEA and the Singapore Food Agency (SFA) have worked with various industry stakeholders to publish food waste minimisation guidebooks for&nbsp;food retail establishments, supermarkets and food manufacturing establishments to reduce food waste across the supply chain. Click on the following guidebooks to find out more.<br></p><table><tbody><tr><td><img src="/images/default-source/our-serivces/waste-management/fwm-guidebook-for-food-retail-establishments.png?MaxWidth=150&amp;MaxHeight=300&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=EEDF80C7427AC389001FAD28E8D6F175FF95F586" data-displaymode="Custom" alt="fwm-guidebook-for-food-retail-establishments" title="fwm-guidebook-for-food-retail-establishments" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;150&quot;,&quot;MaxHeight&quot;:&quot;300&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" style="vertical-align: middle;"></td><td><img src="/images/default-source/our-serivces/waste-management/fwmgb-supermarket-cover.png?MaxWidth=150&amp;MaxHeight=300&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=3FE325A62D6063CE8EFB82C5D02984D943579138" data-displaymode="Custom" alt="fwmgb-supermarket-cover" title="fwmgb-supermarket-cover" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;150&quot;,&quot;MaxHeight&quot;:&quot;300&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" style="vertical-align: middle;"></td><td style="text-align: center;"><img src="/images/default-source/our-serivces/waste-management/guidebook-fm-cover.png?MaxWidth=150&amp;MaxHeight=300&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=A31F148FA5C9314CDCB40BC04C80A85F1E33AA71" data-displaymode="Custom" alt="guidebook-fm-cover" title="guidebook-fm-cover" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;150&quot;,&quot;MaxHeight&quot;:&quot;300&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}" style="vertical-align: middle;"></td></tr><tr><td><p><a href="https://www.nea.gov.sg/docs/default-source/our-services/waste-management/fwm-guidebook-for-food-retail-establishments-(resized).pdf" target="_blank" title="" class="">Food Waste Minimisation Guidebook for Food Retail Establishments<br>[PDF, 3.15 Mb]</a></p></td><td><p><a href="https://www.nea.gov.sg/docs/default-source/our-services/waste-management/fwm-guidebook-for-supermarkets-(resized).pdf" target="_blank" title="" class="">Food Waste Minimisation Guidebook for Supermarkets<br>[PDF, 3.60 Mb]</a></p></td><td><a href="https://www.nea.gov.sg/docs/default-source/our-services/waste-management/fwm-guidebook-for-food-manufacturing-establishments-(resized).pdf" target="_blank" title="" class="">Food Waste Minimisation Guidebook for Food Manufacturing Establishments [PDF, 3.08 Mb]</a></td></tr></tbody></table>Organisations who wish to embark on their own food wastage reduction (FWR) programmes or collaborate with NEA for outreach programmes can contact us for more information.&nbsp;<br><br>Possible areas for collaboration include:<br><p style="text-align: left;">a) Publicity<br>Organisations could leverage on their publicity platforms (e.g. social media platforms, webpage, notice boards) to raise awareness on and promote FWR. NEA could work with organisations to develop relevant content if required.&nbsp;<br><br>b) Starting a FWR outreach programme<br>Organisations can implement their own FWR outreach programme. Organisations can train their staff to be Food Wastage Reduction Ambassadors (FWRAs), to lead outreach programmes within the organisation. NEA could work with organisations to support your outreach programmes or train staff to be FWRAs.&nbsp;<br><br>Owners and operators of food retail business or premises with food retail establishments (e.g. staff canteens, cafes) can consider adopting FWR practices from the food waste minimisation guidebooks.&nbsp;<br><br>NEA has also developed a Love Your Food @ Canteen programme, a clean plate challenge to encourage patrons to order only what they can and finish their food so as to reduce food waste generated. NEA can support you by providing the required resources. A toolkit has also been developed to guide organisations in implementing your own challenge as part of your FWR outreach programme.&nbsp;<br></p><p style="text-align: center;"><img src="/images/default-source/our-serivces/waste-management/food-waste/lyf-@-canteen-programme-toolkit.tmb-medium.png" data-displaymode="Thumbnail" alt="LYF @ Canteen programme toolkit" title="LYF @ Canteen programme toolkit" style="vertical-align: middle;"><br><a href="/docs/default-source/default-document-library/nea-love-your-food-canteen-programme_challenge-toolkit.pdf" title="NEA Love Your Food  Canteen Programme_Challenge Toolkit">NEA Love Your Food  Canteen Programme_Challenge Toolkit</a> [PDF, 1.68 Mb]<br></p><p style="text-align: left;">c) Collaterals&nbsp;<br>Organisations can request for collateral materials bearing FWR messaging (e.g. posters, table-top stickers) to be placed within food retail establishments, canteens, pantries etc. The minimum display period for the collaterals is 3 months.&nbsp;<br><br>Other collateral materials such as a pop-up banner and table games are also available for rent for organisations who wish to implement FWR outreach programmes. More information on the rental of these items can be found&nbsp;<a href="https://www.eportal.nea.gov.sg/app/#/applications/create/request-for-loan-of-exhibits" title="Request for loan of exhibits form" target="_blank">here</a>.<br><br></p>
-
-</div><div class='sfContentBlock'><p style="text-align: left;"><strong>Strategy 2:&nbsp;Redistribute unsold/excess food</strong><br></p><div class="sfContentBlock"><div id="strategy2"><p>As part of NEA’s ongoing 3R (Reduce, Reuse, Recycle) outreach effort, NEA encourages both organisations and members of the public to donate their unsold and excess food to food distribution organisations.<br></p> <p>Food manufacturers, food retail establishments and supermarkets can contact food distribution organisations to make arrangements for the donation of their unsold and excess food. For instance, unsold and/or excess food produce can be delivered to Food Bank Singapore or Food from the Heart where they are packed and distributed to needy households.</p> <p>Members of the public can also reduce food waste by donating safe and edible food items which they no longer wish to consume. For example, they could drop off their excess non-perishable food items at various collection points. Shopping malls and offices may also wish to adopt a bank box to be placed at their premises to offer a convenient point for people to drop off their unwanted yet unopened and unexpired food items.</p> <div> <div><div id="_com_1" language="JavaScript"><p style="text-align: center;">&nbsp;<img src="/images/default-source/our-serivces/foodbank.png" data-displaymode="Original" alt="foodbank" title="foodbank"><br>Food-boxes by Food Bank Singapore<br></p></div></div> </div><p>For more information on the food distribution organisations, please click&nbsp;<a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-distribution-organisations-local-recycling-facilities-and-suppliers" target="_blank">here</a>.&nbsp;<br><br></p></div></div>
-
-</div><div class='sfContentBlock'><div class="sfContentBlock"><div id="strategy2"><p><strong>Strategy 3: Recycle/Treat food waste</strong><br></p></div></div><div class="sfContentBlock"><p>Food waste that cannot be avoided should be recycled where possible. To support successful food waste recycling, food waste must be separated from non-food waste items, such as disposable cutlery, as they may disrupt the recycling process. Segregation of food waste is best done at the source (i.e. at the point of generation) as it is less efficient to separate it once it is mixed with general waste.</p><p>Some households have started composting food waste, such as raw fruit and vegetable scraps, using worms or making their own composting bins at home. The National Parks Board has provided some&nbsp;<a href="https://www.nparks.gov.sg/gardening/gardening-resources/caring-for-plants/composting" target="_blank">guidelines on how the public can begin their DIY composting at home</a>.<br></p><p><b><u>Homogeneous</u></b><strong><u>&nbsp;food waste recycling</u></strong></p><div>Currently, majority of the food waste that is recycled is mainly homogeneous food waste from food manufacturers. These include spent yeast/grains from beer brewing, soya bean waste and bread waste, which are segregated at the source and sold to recyclers for conversion into animal feed.</div><p>Click <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-distribution-organisations-local-recycling-facilities-and-suppliers" target="_blank">here</a>&nbsp;for the list of food waste recycling facilities and the types of food waste that they can accept.<br></p><p><strong><u>On-site food waste treatment</u></strong></p><p>In addition, several owners/operators of premises, including hotels, shopping malls and schools, are segregating their food waste and using on-site food waste treatment systems to convert the food waste into compost for landscaping purposes or water for non-potable use.&nbsp;<br><br>Click <a href="/our-services/waste-management/3r-programmes-and-resources/food-waste-management/food-distribution-organisations-local-recycling-facilities-and-suppliers" target="_blank">here</a>&nbsp;for a list of suppliers of on-site food waste treatment systems.<br><br>Owners and operators of premises who wish to implement on-site food waste treatment may refer to the process flow below:<br><br>1. Conduct a food waste audit or estimate the amount of food waste generated&nbsp;<em><strong>(</strong></em><em><strong>Refer to S/N 1)</strong><br></em>2. Decide on the type of system (i.e. wet system with non-potable water as the end-product, dry system with compost as the end product)&nbsp;<em><strong>(Refer to S/N 2)</strong></em><br>3.&nbsp; Decide location of food waste treatment system&nbsp;<em><strong>(Refer to S/N 3)<br></strong></em></p><table><tbody><tr><td width="180"><strong>S/N</strong></td><td><strong>Description of initiatives</strong></td></tr><tr><td>1. Determine the capacity of food waste treatment system </td><td>Prior to selecting the food waste treatment system, we recommend premises owners/operators to conduct a food waste audit to determine the amount of food waste generated. This provides an indication on a suitable capacity for the food waste treatment system.<br><p>To conduct a food waste audit, you may refer to the Food Waste Minimisation Guidebooks which provides a simple food waste audit template. Alternatively, premises who wish to conduct an in-depth audit can refer to <a></a><a href="https://www.singaporestandardseshop.sg/Product/SSPdtDetail/023d4d48-f3fa-4d70-9c96-0dfe1333ac1b" title="" class="" target="_blank">SS 633 - Singapore Standards on Food Waste Management for Food</a> Manufacturing/Processing Establishments and <a></a><a href="https://www.singaporestandardseshop.sg/Product/SSPdtDetail/01b00b90-9fc4-4fb1-abd5-07b97e0a88b4" title="" class="" target="_blank">SS 640 - Singapore Standards on Food Waste Management for Food Retail, Wholesale and Distribution Establishments.</a><br></p> <p>Premises can also work with suppliers of on-site treatment systems to estimate the amount of food waste generated and the recommended capacity of the system.<br></p> <div> <div><div id="_com_3" language="JavaScript"></div> </div> </div></td></tr><tr><td>&nbsp;2. Consider the type of food waste treatment system </td><td>When selecting the type of food waste treatment system, consider the following:<ol><li>Type of food waste that can be treated<p>Consider the types of food waste that the system can and cannot treat. Some systems may require a grinder to crush big or hard bones before they can be treated. Generally, hard shells (e.g. lobster/oyster shells, coconut/durian husks) or fibrous items like sugarcane bagasse cannot be deposited into the treatment system.</p></li><li><p>Types and uses of end-products</p><p>Consider the uses of end-product(s) (e.g. non-potable water, compost, fertiliser and liquid nutrient) that are generated from the food waste treatment system. In general, there are 2 types of end-product.</p></li></ol><p>i. <span style="text-decoration: underline;">Non-potable water</span>: They may be used to backwash the treatment system or washing of floors.<br><br>ii.&nbsp;<u>Compost/fertiliser/liquid nutrient</u>: They may be used for landscaping purposes. Please refer to the <a href="https://www.singaporestandardseshop.sg/Product/SSPdtDetail/6521d403-f66c-45f3-8db6-e41731b888b3" title="" class="" target="_blank">SS 628 – Singapore Standards on Specifications for Compost</a>&nbsp;for the use of compost in agriculture and horticulture.</p><p> Provisions shall be made for the effluent from the food waste treatment system to be discharged into the sewer through a grease trap.<br></p></td></tr><tr><td style="text-align: left;">3. Location of food waste treatment system</td><td>Premises should cater space to house the food waste treatment system. In general, the space required for a 1-tonne food waste treatment system is approximately the size of 2 carpark lots. For new developments, this space could be set aside during planning or renovation. Premises are also recommended to check with suppliers on the exact space requirements for the specific systems. <br><p>For hygiene purpose, the food waste treatment system should be sited away from the food preparation area. Some possible areas for siting of food waste treatment system include the bin centre or dishwashing area. Please ensure that proper refuse, odour and pest management are in place with the installation of the food waste treatment system.&nbsp;</p>There should also be a power supply available for the treatment system.<br></td></tr></tbody></table><br><p>Besides on-site food waste treatment systems, there are systems that remove moisture from food waste through dehydration or heating. While these systems reduce the weight and volume of food waste, they do not involve biological processes to decompose food waste. The residue is dewatered food waste and may cause odour or pest issues when it becomes wet. Thus, it is unsuitable for landscaping use.<br></p><p><strong><u>Off-site food waste treatment</u></strong></p><p>NEA has conducted a pilot project to assess the viability of collecting and transporting source-segregated food waste to an off-site treatment facility where the food waste is co-digested with used water sludge. Source-segregated food waste collected from various premises is transported to a demonstration facility located at Ulu Pandan.</p><p>The demonstration facility is designed to treat up to 40 tonnes of combined food waste and used water sludge daily. The co-digestion process yields more biogas compared to the treatment of used water sludge alone, thereby enhancing energy recovery. As the pilot has demonstrated that it is feasible to collect food waste from various premises for transportation to an off-site facility for treatment and conversion into biogas, the process will be implemented at the upcoming <a href="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/waste-management-infrastructure/integrated-waste-management-facility" title="" class="" target="_blank">Tuas Nexus</a>.<br></p><p><strong><u>Implementing food waste segregation</u></strong></p><p style="text-align: left;">To guide owners/operators and occupiers of premises on implementing proper food waste segregation and adopting food waste recycling/treatment, NEA has also developed a food waste segregation guidebook.</p><p style="text-align:center;"><img src="/images/default-source/our-serivces/waste-management/food-waste/food-waste-segregation-and-treatment-guidebook_cover.png?MaxWidth=250&amp;MaxHeight=353&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=31EEFE279EF97BFBE4B09E4CFD9DA4F0C96E87A5" data-displaymode="Custom" alt="Food Waste Segregation and Treatment Guidebook_cover" title="Food Waste Segregation and Treatment Guidebook_cover" data-method="ResizeFitToAreaArguments" data-customsizemethodproperties="{&quot;MaxWidth&quot;:&quot;250&quot;,&quot;MaxHeight&quot;:&quot;353&quot;,&quot;ScaleUp&quot;:false,&quot;Quality&quot;:&quot;High&quot;}"><br><a href="/docs/default-source/envision/food-waste/nea-fw-segregation-and-treatment-guidebook.pdf" title="Food Waste Segregation and Treatment Guidebook">Food Waste Segregation and Treatment Guidebook</a>&nbsp;[PDF, 2.2 Mb]</p><p>&nbsp;</p></div>
-
-</div><div class='sfContentBlock'><div class="sfContentBlock"><p><strong>Strategy 4: Recover energy</strong><br></p></div><div class="sfContentBlock"><p>Food waste that is not recycled or treated will be disposed of at the waste-to-energy (WTE) plants for energy recovery.</p><p>For more information on the WTE plants, please click&nbsp;<a href="https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/waste-management-infrastructure/waste-to-energy-and-incineration-plants" target="_blank" title="" class="">here</a>.</p>
-
-</div>
-
-</div>
-            
-        </div>
-    </div>
-</div>
-        
-        </div>
-    </div>
-
-            
-        </div>
-    </div>
-</div><div class="sf_cols content-block">
-    <div class="sf_colsOut sf_1col_1_100" style="" data-placeholder-label="explore more">
-        <div id="mainContent_mainContent_TFA5CC790003_Col00" class="sf_colsIn sf_1col_1in_100">
-            
-        </div>
-    </div>
-</div>
-
-        </main>
-        <footer class="footer">
-            <button type="button" class="backtotop js-backtotop"><i class="icon icon-arrow-up"></i><span class="vh">Back to</span><span>Top</span></button>
-            
-    
-        <div class="related-sites">
-            <div class="container">
-                <div class="related-sites_item">
-                    <div class="related-sites_title">
-                        <h2 class="title">Our Related Sites</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    
-<div class='sfContentBlock'><div class="footer__icons">
-<div class="container-fluid">
-<ul class="site-icon-wrapper row"><li><a href="http://www.weather.gov.sg/home/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/footer-logo-mss.jpg" data-displaymode="Original" alt="footer-logo-mss (optmised)" title="footer-logo-mss (optmised)"></a></li><li><a href="https://www.haze.gov.sg/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/footer-logo-nea-haze.jpg" data-displaymode="Original" alt="footer-logo-nea-haze (optimised)" title="footer-logo-nea-haze (optimised)"></a></li><li><a href="https://www.cgs.gov.sg/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/footer-logo-cgs.jpg" data-displaymode="Original" alt="footer-logo-cgs (optimised)" title="footer-logo-cgs (optimised)"></a></li><li><a href="https://www.publichygienecouncil.sg/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/footer-logo-phc.jpg" data-displaymode="Original" alt="footer-logo-phc (optimised)" title="footer-logo-phc (optimised)"></a></li><li><a href="https://www.reach.gov.sg/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/footer-logo-reach.jpg" data-displaymode="Original" alt="footer-logo-reach (optimised)" title="footer-logo-reach (optimised)"></a></li><li><a href="https://www.cleanenvirosummit.gov.sg/" class="site-icon-item " target="_blank" rel="noreferrer noopener" title=""><img alt="Clean Enviro Summit Logo" src="/images/default-source/default-album/fy21/default-album/footer-logo-cess.png" data-displaymode="Original" title="footer-logo-cess"></a></li><li><a href="http://www.towardszerowaste.gov.sg/" title="" class="" target="_blank" rel="noreferrer noopener"><img src="/images/default-source/homepage/zerowaste_logo_small5982ece600674628a922431587333143.jpg" data-displaymode="Original" alt="zerowaste_logo_small (optimised)" title="zerowaste_logo_small (optimised)"></a></li><li><a href="https://www.sgclean.gov.sg/" title="" class="" target="_blank"><img src="/images/default-source/homepage/sg-clean-logo-small.jpg" data-displaymode="Original" alt="SG Clean Logo small" title="SG Clean Logo small"></a></li><li><a href="https://www.climate-friendly-households.gov.sg/" title="" class="" target="_blank"><img src="/images/default-source/homepage/cfh_logo_small.jpg" data-displaymode="Original" alt="CFH_logo_small" title="CFH_logo_small"></a></li><li><a href="https://www.greenplan.gov.sg/" title="" class="" target="_blank"><img src="/images/default-source/homepage/sg-green-plan_small_2.png" data-displaymode="Original" alt="SG Green Plan_small_2" title="SG Green Plan_small_2"></a><br></li></ul></div>
-</div>
-
-</div>
-
-            
-    
-<footer class="sgds-footer top-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <p class="title"><b>National Environment Agency</b></p>
-            </div>
-            <div class="col-md-7 is-right-desktop-only">
-                <div class="footer_info app-block">
-                    <span class="has-text-weight-bold">Get the app</span>
-                    <ul class="social-media app-list">
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=sg.gov.nea&amp;hl=en" target="_blank" rel="noreferrer noopener" class="app-list-item">
-                                <i class="icon smallicon-android"></i>
-                                <span>Download <br />for Android</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://itunes.apple.com/sg/app/myenv/id444435182?mt=8" target="_blank" rel="noreferrer noopener" class="app-list-item">
-                                <i class="icon smallicon-iphone"></i>
-                                <span>Download <br />for iPhone</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Best viewed using the current and previous release of Chrome and Safari<br /></p>
-            </div>
-            <div class="col-md-7 is-right-desktop-only">
-                <ul>
-                    <li class="">
-                        <p><a href="/corporate-functions/Contact-Us" target="_self">Contact Us</a></p>
-                    </li>
-                    <li class="">
-                        <p><a href="/corporate-functions/feedback" target="_self">Feedback</a></p>
-                    </li>
-
-                    <li class="footer_info"><a href="/follow-nea">Follow us</a>
-
- <ul class="social-media"><li><a href="https://www.facebook.com/NEASingapore" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Facebook</span><span class="fab fa-facebook-f"></span></a></li><li><a href="https://twitter.com/NEAsg" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Twitter</span><span class="fab fa-twitter"></span></a></li><li><a href="https://www.instagram.com/nea_sg/" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Instagram</span><span class="fab fa-instagram"></span></a></li><li><a href="https://www.linkedin.com/company/national-environment-agency" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">LinkedIn</span><span class="fab fa-linkedin-in"></span></a></li><li><a href="https://www.youtube.com/channel/UC-tjEFkd0tT2VpD5vbjyAKA/videos" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Youtube</span><span class="fab fa-youtube"></span></a></li><li><a href="https://go.gov.sg/whatsapp-nea" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">WhatsApp</span><span class="fab fa-whatsapp"></span></a></li><li><a href="https://t.me/NEASingapore" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Telegram</span><span class="fab fa-telegram-plane"></span></a></li><li><a href="https://www.tiktok.com/@nea_sg" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">Tiktok</span><span class="fab fa-tiktok"></span></a></li><li><a href="/rss/rss-feeds" target="_blank" rel="noreferrer noopener" class="social-media__item"><span class="visuallyhidden">RSS</span><em class="icon smallicon-rss"></em></a></li></ul></li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="row divider">
-            <div class="col-md-12">
-                <ul class="footer-links">
-                    <li><a href="https://tech.gov.sg/report_vulnerability" target="_blank" rel="noreferrer noopener">Report Vulnerability</i></a></li>
-                    <li><a href="/privacy-statement" target="_self">Privacy Statement</a></li>
-                    <li><a href="/terms-of-use" target="_self">Terms of Use</a></li>
-                    <li><a href="/open-data-licence" target="_self">Open Data Licence</a></li>
-                    <li><a href="/sitemap" target="_self">Sitemap</a></li>
-                </ul>
-            </div>
-            <div class="col-md-12 is-right-desktop-only">
-                <p class="copyright">
-                    <span>&copy; 2023 Government of Singapore</span><br />
-                    <span class="last-update">Last updated 31 January 2023</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body onload="lateLoadChatFile()">
-<div id="webchat"
-         app-id="nea-captain-green"
-         app-name="Ask Captain Green"
-         app-color="#74B74A"
-         app-enable-recommendations="false"
-         app-icon="/images/default-source/vica-nea/captaingreen-avatar_final.png?Status=Temp"
-         app-subtitle=""
-         app-orchestrator-timeout="17000"
-         app-welcome-message="How can I help?"
-         app-base-font-size="16"
-         app-position-right="15"
-         app-position-bottom="100"
-         app-enable-auto-complete="true"
-         app-enable-recommendations="true"
-         app-auto-launch="false"
-         app-bot-response-trigger-event="true"
-         app-quick-launch-event="welcome"
-         app-foreground-color1="#FFFFFF"
-         app-foreground-color-2="#2E2E2E"
-         app-background-color2="#FFFFFF"
-         app-canvas-background-color="#DCDCDC"
-         app-button-border-color="#91D149"
-         app-quick-reply-button-background-color="#ECECEC"
-         app-auto-complete-background-color="#D6EEBB"
-         app-auto-complete-foreground-color="#2E2E2E"
-         app-auto-complete-hover-color="#91D149"
-         app-auto-complete-divider-color="#2E2E2E"
-         app-launcher-animation-iteration="0"
-         app-orchestrator-timeout="8000"
-         app-font-family="Roboto, sans-serif">
-</div>
-
-        </footer>
-        
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #383838;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #383838;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #383838;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #383838;
+    }
     
 
+	.widgetSearch .widgetBody .widgetSearchBoxf990e06f-9b7d-417b-88d5-958d786cc9c8
+	{
+        color: #000000;
+		background: #ffffff;
+border: none;
+border-radius: 10px;
+box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16);
+height: 56px;
+font-family: Montserrat;
+font-size: 16px;
+font-style: italic;
+padding: 0 58px 0 18px;
+	}
+	.widgetSearch .widgetBody .widgetSearchButtonf990e06f-9b7d-417b-88d5-958d786cc9c8
+	{
+		margin: 4px 4px 0 0;
+	}
+	.widgetSearch .widgetSearch-onlyDeptf990e06f-9b7d-417b-88d5-958d786cc9c8
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDeptf990e06f-9b7d-417b-88d5-958d786cc9c8
+	{
+		position: relative;
+		top: .125em;
+	}
 
-    <script type="text/javascript" src="/assets/scripts/socialmedia.js"></script><script type="text/javascript">
-var jqe = jQuery.noConflict();
-jqe('a[href^="/doc"]').each(function(){
-    if(jqe(this).attr('title') ==="Untitled" || jqe(this).attr('title') ==='' || jqe(this).not('title') ){
- jqe(this).attr('title',$(this).text());
-  }
-  
-      if(jqe(this).attr('alt') ==="Untitled" || jqe(this).attr('alt') ==='' || jqe(this).not('alt') ){
- jqe(this).attr('alt',$(this).text());
-  }
-})
+</style>
 
-</script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchFieldf990e06f-9b7d-417b-88d5-958d786cc9c8").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavGovernment" class="navMainItem mainNavItem mainNavItem1" href="/27/Government" target="_self">Government</a><!--
+			--><!--
+			--></li><!----><li id="MainItem7295" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="7295" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavDepartments" class="navMainItem mainNavItem mainNavItem2" href="/7295/Departments" target="_self">Departments</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavServices" class="navMainItem mainNavItem mainNavItem3" href="/9/Services" target="_self">Services</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavCommunity" class="navMainItem mainNavItem mainNavItem4" href="/31/Community" target="_self">Community</a><!--
+			--><!--
+			--></li><!----><li id="MainItem4820" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="4820" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavBusiness" class="navMainItem mainNavItem mainNavItem5" href="/4820/Business" target="_self">Business</a><!--
+			--><!--
+			--></li><!----><li id="MainItem4819" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="4819" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavHowDoI" class="navMainItem mainNavItem mainNavItem6" href="/4819/How-Do-I" target="_self">How Do I</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=13&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = true;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="1"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cc936f4d31-5fc8-42f2-b3e0-e5acb09e1ab3" data-containerid="936f4d31-5fc8-42f2-b3e0-e5acb09e1ab3" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu7295" class="contentTop mainNavMegaMenu megaMenuContainer pageID_7295 hidden" data-orientation="horizontal">	<div id="ccc58bbb1c-a497-4ddb-ad40-a0295a00e44d" data-containerid="c58bbb1c-a497-4ddb-ad40-a0295a00e44d" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="cc3d1070ce-8c4e-455c-95c9-61d1ed819e92" data-containerid="3d1070ce-8c4e-455c-95c9-61d1ed819e92" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc7cfc1e14-aef4-4896-80d7-118039936d03" data-containerid="7cfc1e14-aef4-4896-80d7-118039936d03" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu4820" class="contentTop mainNavMegaMenu megaMenuContainer pageID_4820 hidden" data-orientation="horizontal">	<div id="cccf77073a-50ba-45eb-9af0-66a2ccd5b3e5" data-containerid="cf77073a-50ba-45eb-9af0-66a2ccd5b3e5" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu4819" class="contentTop mainNavMegaMenu megaMenuContainer pageID_4819 hidden" data-orientation="horizontal">	<div id="cc3bfc7157-ce98-4c6c-b82a-afa3904ace98" data-containerid="3bfc7157-ce98-4c6c-b82a-afa3904ace98" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</header><!-- Banner --><div data-cpRole="structuralContainer" id="bannerContainerTS" class="noOverflowTS">
+<div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="bannerSizingTS">
+<div data-cpRole="structuralContainer" id="bannerContentTS">
+<div class="siteWrap3"><div data-cpRole="contentContainer" id="contentTS">	<div id="cc8213bc79-c0ec-47c9-8a8e-19dd7bdc9824" data-containerid="8213bc79-c0ec-47c9-8a8e-19dd7bdc9824" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON95" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":95,"ThemeID":13,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":"5","SlideshowTransition":0,"SlideShowTransitionTiming":"1","ImageScale":true,"ImageAlignment":1,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":414,"BannerOptionID":95,"FileName":"/ImageRepository/Document?documentID=343599","Height":394,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":415,"BannerOptionID":95,"FileName":"/ImageRepository/Document?documentID=343598","Height":394,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":416,"BannerOptionID":95,"FileName":"/ImageRepository/Document?documentID=343600","Height":394,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[{"BannerVideoID":2,"BannerOptionID":95,"VideoFileName":"","ImageFileName":"EmptyBannerBkg202304081053554430.png","IsLink":false,"LinkAddress":null,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","VideoFileID":"00000000-0000-0000-0000-000000000000","ImageFileID":"00000000-0000-0000-0000-000000000000","VideoWidth":0,"VideoHeight":0,"ImageWidth":0,"ImageHeight":0,"LinkedVideoUrl":"","RecordStatus":0,"AltText":null}],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+								'/App_Themes/2023 - Interior/Images/',
+								'Rotating',
+								'0');
+						});
+				}, "load");				
+			</script>
+
+
+</div>
+</div><!-- Content container --><div data-cpRole="structuralContainer" id="mainContainerTS">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="mainWrapTS" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="outerContentWrapTS" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="contentWrapTS" class="contentWrap">
+<div data-cpRole="breadCrumbs" id="breadCrumbs" class="breadCrumbContainer">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li><a class="breadCrumb" href="/27/Government">Government</a></li><li><a class="breadCrumb" href="/8/Divisions">Divisions  </a></li><li><a class="breadCrumb" href="/5634/Solid-Waste-and-Recycling">Solid Waste and Recycling</a></li><li><a class="breadCrumb" href="/1764/Recycling-Information">Recycling Information</a></li><li><a class="breadCrumb" href="/3956/Waste-Reduction">Waste Reduction</a></li><li id="currentBCPage" data-pageid="8199">Reducing Food Waste</li>
+		</ol>
+
+	   
+    
+</div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="8199" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="3956" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="108750" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value="Reducing Food Waste" />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="False" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Published" />
+
+				<h1 id="versionHeadLine" class="headline">
+
+Reducing Food Waste		</h1>
+	
+		<div id="cc127a8e52-da65-414f-a071-d9598d053897" data-containerid="127a8e52-da65-414f-a071-d9598d053897" class="pageContent cpGrid cpGrid24"  data-smoothscrolling="True">
+			
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="5d0b3d27-f26d-4df2-b51c-c8e950b7b717">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col24 first last ideb4a5b83-f7a8-4725-8571-545f239dc27d" style="" data-widgetcontainerid="eb4a5b83-f7a8-4725-8571-545f239dc27d">
+	
+<div class="widget editor pageStyles narrow" id="divEditor037412a2-9b6f-45f3-996a-b08e22429624" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline"><img src="/ImageRepository/Document?documentId=332299" class="fr-fil fr-dii" alt="berry" style="width: 45px;">40% of the U.S. food supply is discarded each year. There&apos;s a lot each of us can do to reduce this staggering amount of <em>waste.&nbsp;</em></h1><p><strong>Use the links on this page to learn more, and, if you have questions, contact our office by sending email to <a data-fr-linked="true" href="mailto:recycle@FrederickCountyMD.gov"><em>recycle@FrederickCountyMD.gov</em></a></strong><em><strong>.&nbsp;</strong></em><strong id="isPasted" style="box-sizing: border-box; font-weight: 700; color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Trying any - or all - of the five steps on this page will lead you down the path to reducing your &quot;waste-line!&quot; Thanks for thinking about this topic and helping manage your community - and planet&apos;s - resources better.</strong>&nbsp;</p><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; color: rgb(74, 156, 173); font-size: 1.1em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);'><strong>Step 1:</strong> Assess the Problem</h3><p>Get started with a&nbsp;<a aria-label="Food Waste Log Opens in new window" href="/DocumentCenter/View/332292" rel="noopener" target="_blank"><strong>Food Waste Log</strong></a>, because the first step in reducing waste is figuring how much you&apos;re actually wasting! Take a week or two to observe your household&apos;s average waste- it&apos;s enlightening and will inspire you to action, as well as help measure your progress.<br><br>Don&apos;t have time to log waste for the recommended week or two? Here&apos;s a &quot;<a href="/DocumentCenter/View/332294" rel="noopener" target="_blank"><strong>10 Minute Fridge Check</strong></a>&quot; to get you started.</p><p>Don&apos;t even have 10 minutes to spare? Take this <a href="https://ivaluefood.com/quiz.php" rel="noopener" target="_blank"><strong>quick online quiz</strong></a> to get started and you&apos;ll get recommended resources based on your results.</p><p>Have an upper-elementary aged student? Need to recruit some household help? Print the &quot;<a href="/DocumentCenter/View/332295" rel="noopener" target="_blank"><strong>Garbologist Adventure</strong></a>&quot; guide to make it a family learning project.</p><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; color: rgb(74, 156, 173); font-size: 1.1em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);'><strong>Step 2:</strong> Know Your Inventory</h3><p>These printable sheets are excellent tools to help you better manage the food in your kitchen:</p><ul><li><a aria-label="Kitchen Inventory Worksheets Opens in new window" href="/DocumentCenter/View/332287" rel="noopener" target="_blank"><strong>Kitchen Inventory Worksheets</strong></a> complete set</li><li><a aria-label="Freezer Inventory Sheet Opens in new window" href="/DocumentCenter/View/332290" rel="noopener" target="_blank"><strong>Freezer Inventory Sheet</strong></a></li><li><a aria-label="Fridge Inventory Sheet Opens in new window" href="/DocumentCenter/View/332289" rel="noopener" target="_blank"><strong>Fridge Inventory Sheet</strong></a></li><li><a aria-label="Pantry Inventory Sheet Opens in new window" href="/DocumentCenter/View/332291" rel="noopener" target="_blank"><strong>Pantry Inventory Sheet</strong></a></li></ul><p>Or, go modern and use<strong>&nbsp;</strong>the<strong>&nbsp;</strong><a href="https://cozzo.app/" rel="noopener" target="_blank"><strong>C</strong><strong>ozzo</strong> <strong>app</strong></a>, a &quot;food, home and personal supplies manager&quot; combined with a shopping and cooking planner and bar code scanner that tracks expiration dates.</p><p>Knowing what you actually have to work with sets you up to try a &quot;<a href="https://goodcheapeats.com/pantry-challenge/" rel="noopener" target="_blank"><strong>Pantry Challenge</strong></a>.&quot; The idea here is to use up and clean out your existing food inventory, to save money, reduce waste AND help you see how to adjust your shopping habits.</p><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; color: rgb(74, 156, 173); font-size: 1.1em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);'><strong>Step 3:</strong> Smart Storage</h3><p>Putting food in the wrong places decreases its shelf life. Not sure what goes where? Print this handy <a aria-label="Fruit & Veggie Storage Guide Opens in new window" href="/DocumentCenter/View/332293" rel="noopener" target="_blank"><strong>Fruit &amp; Veggie Storage Guide</strong></a> or post this &quot;<a aria-label="The Refrigerator Demystified Opens in new window" href="/DocumentCenter/View/332298" rel="noopener" target="_blank"><strong>The Refrigerator Demystified</strong></a>&quot; flyer right on the front of the fridge (so no one can argue about what goes where...)</p><p><span style="color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Need knowledge on how to store, well,&nbsp;</span><em style="box-sizing: border-box; color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">everything?!&nbsp;</em><a href="https://savethefood.com/storage" style="box-sizing: border-box; user-select: auto; color: rgb(185, 53, 46); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"><strong style="box-sizing: border-box; font-weight: 700;">Save The Food</strong></a><span style="color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&nbsp;has it covered.</span></p><p>Now that it&apos;s stored properly...how do you get people to actually use it?! Notify hungry eaters what most needs to be consumed by printing a &quot;<a aria-label="Eat This First Opens in new window" href="/DocumentCenter/View/332296" rel="noopener" target="_blank"><strong>Eat This First</strong></a>!&quot; sign for your fridge and pantry. Use it to label a bin and put at-risk foods inside to get the attention they need.</p><p>Not sure if you really should still eat something? Check the searchable database of food guides at <a href="https://www.eatbydate.com/" rel="noopener" target="_blank"><strong>https://www.eatbydate.com/</strong></a> or &nbsp;<a aria-label="https://www.stilltasty.com/ Opens in new window" href="https://www.stilltasty.com/" rel="noopener" target="_blank"><strong>https://www.stilltasty.com/</strong></a></p><h3><strong>Step 4:&nbsp;</strong>Smart Planning &amp;<strong>&nbsp;</strong>Shopping</h3><p>These two steps two go hand in hand, because it takes a plan to shop better and reduce waste. <span style="color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">When we don&apos;t really know &quot;what&apos;s for dinner?&quot; we tend to make impulse purchases, overbuy, and pick up things we won&apos;t actually use later.&nbsp;</span>The ideal is to have a plan that uses the ingredients you already have on-hand in your fridge, freezer, and pantry, <em>then</em> supplement with a few fresh, new ingredients from the store&hellip;NOT shop first then try to figure out what to do with it. &quot;Shopping&quot; from your pantry allows you to assess what you have, before it goes bad, and use it up! Staying focused on that plan and sticking to your list at the store reduces waste <em>and&nbsp;</em>saves you money!</p><p>If you&apos;re ready, now&apos;s the time to tackle a full-on pantry shopping challenge, so here&apos;s a <a href="/DocumentCenter/View/332301" rel="noopener" target="_blank"><strong>beautiful guidebook</strong></a> on how to do that!</p><p>If you&apos;re not ready to work your way through your full pantry food stash just yet, consider implementing &quot;Waste-Free Wednesdays&quot; or &quot;Thrifty Thursdays&quot; to dedicate one or two days every week to creating a meal from ingredients on hand and/or using up leftovers!</p><ul><li>Here&apos;s some starter ideas if you&apos;re<strong>&nbsp;<a aria-label="new to meal planning Opens in new window" href="https://zerowastechef.com/2016/11/30/4-step-meal-planning/" rel="noopener" target="_blank">new to meal planning</a>.</strong></li><li><a aria-label="This neat template Opens in new window" href="/DocumentCenter/View/332297" rel="noopener" target="_blank"><strong>This neat template</strong></a><strong>&nbsp;</strong>combines a meal planner and shopping list on one easy page- plus takes into account what ingredients you already have!</li><li>Here&apos;s an <a href="https://shelfcooking.com/" rel="noopener" target="_blank"><em><strong>entire website</strong></em></a> dedicated to meal planning and prep with waste reduction (use what you have!) in mind</li><li>Want a digital assistant to make all of this easier? Check out these 14 recommended <a aria-label="meal planning app options Opens in new window" href="https://funcheaporfree.com/a-free-grocery-app-you-told-me-about-that-everyone-needs/" rel="noopener" target="_blank"><strong>meal planning app options</strong></a><strong>.&nbsp;</strong>(We tried and loved <a aria-label="MealLime Opens in new window" href="https://www.mealime.com/" rel="noopener" target="_blank"><strong>MealLime</strong></a><strong>!</strong> Let us know which app works best for you.)</li></ul><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; color: rgb(74, 156, 173); font-size: 1.1em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);'><strong>Step 5:</strong> Clever Cooking</h3><p>Visit <a aria-label="Save The Food's website Opens in new window" href="https://savethefood.com/guestimator/guests#guest-container" rel="noopener" target="_blank"><strong>Save The Food&apos;s website</strong></a> and use their free app to know how much food to cook when guests are coming...and here are tips on&nbsp;<a href="https://savethefood.com/articles/5-ways-to-revive-food" rel="noopener" target="_blank"><strong>what to do</strong></a> when the food is burned, wilted or stale!<br><br>Uninspired by your leftovers? Got food that&apos;s about to expire? Here are three terrific websites designed to reduce waste by letting you find recipes that include your specific ingredients, transform leftovers, and use not-quite-fresh produce:&nbsp;</p><ul><li><a href="https://www.lovefoodhatewaste.com/recipes"><strong>https://www.lovefoodhatewaste.com/recipes</strong></a><strong>&nbsp;</strong></li><li><strong><a href="https://www.bigoven.com/recipes/leftover">https://www.bigoven.com/recipes/leftover</a></strong></li><li><strong><a href="https://www.allrecipes.com/recipes/14503/everyday-cooking/everyday-leftovers/ ">https://www.allrecipes.com/recipes/14503/everyday-cooking/everyday-leftovers/</a></strong></li></ul><p><strong>Consider canning! Whether it&apos;s a simple, quick&nbsp;</strong><a aria-label="refrigerator pickle Opens in new window" href="https://www.thekitchn.com/how-to-quick-pickle-any-vegetable-233882" rel="noopener" target="_blank"><strong>refrigerator pickle</strong></a> process for your old veggies, or, a plan to <a href="https://nchfp.uga.edu/" rel="noopener" target="_blank"><strong>put away produce</strong></a> for winter, canning can help reduce food waste and increase your fruit and vegetable intake.&nbsp;</p><p><strong>But wait, there&apos;s more!</strong></p><p><span style="font-size: 14px;">In 2020, The Northeast Recycling Council hosted a virtual &quot;ReCook Cafe&quot; featuring professional chefs sharing their favorite tips, tricks, and techniques to help home cooks get the most out of their food, reducing waste while creating delicious dishes. Here are some great resources from this event:</span></p><ul><li><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; outline: 0px;"><a aria-label="Amazing Waste! Here's an entire cookbook Opens in new window" href="https://www.frederickcountymd.gov/DocumentCenter/View/332285" rel="noopener" style="box-sizing: border-box; user-select: auto; color: rgb(185, 53, 46); text-decoration: underline;" target="_blank"><strong style="box-sizing: border-box; font-weight: 700;">Amazing Waste! Here&apos;s an entire cookbook</strong></a> produced by the University of Wisconsin that is dedicated to using <em style="box-sizing: border-box;">more</em> of the food you buy - from repurposing scraps, to preserving your produce, to reinventing what you consider &quot;waste!&quot; &nbsp;68 pages of recipes, tips and ways to waste less in the kitchen.</span></li><li><span style="font-size: 14px;"><a aria-label="Chef McCarthy's Food Waste Hacks Opens in new window" href="https://www.frederickcountymd.gov/DocumentCenter/View/332283" rel="noopener" style="box-sizing: border-box; user-select: auto; color: rgb(185, 53, 46); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" target="_blank"><strong style="box-sizing: border-box; font-weight: 700;">Chef McCarthy&apos;s Food Waste Hacks</strong></a> One of the resources shared was a series of recipes from Chef Jim McCarthy that use &quot;old&quot; or &quot;extra&quot; produce parts as well as a fascinating worksheet that lists ways to salvage food that you might think is expired or even moldy!</span></li><li><span style="font-size: 14px;"><a aria-label="Chef Morgan Waite's &quot;Beetza&quot; Recipe Opens in new window" href="/DocumentCenter/View/332284" rel="noopener" target="_blank"><strong>Chef Morgan Waite&apos;s &quot;Beetza&quot; Recipe</strong></a> This expert discussed &quot;root to stem cooking,&quot; a fancy term for fully using all the parts of a fruit or a vegetable. This recipe uses an unexpected item (beets) to make a common dish (pizza!) and wastes nothing in the process.</span></li></ul><p><span style="font-size: 14px;"><span style="color: rgb(97, 99, 78); font-family: Arial; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">Ready for summer guests? Here&apos;s a guide to &quot;</span></span><a aria-label="How To Host A Less Waste BBQ Opens in new window" href="https://stopfoodwaste.org/tips/blog/how-to-host-a-less-waste-bbq" rel="noopener" target="_blank"><span style="color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><strong>Ho</strong><strong>w To Host A Less Waste BBQ</strong></span></a><span style="color: rgb(97, 99, 78); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">!&quot;</span>&nbsp;</p><p>________________________________________________________________</p><h2 class="subhead1"><a aria-label="THEN, please consider donating your excess food! Opens in new window" href="https://www.frederickcountymd.gov/8428/Donate-Excess-Food" rel="noopener" target="_blank"><strong>THEN, please consider donating your excess food!</strong></a></h2>
+    </div>
 
 <script type="text/javascript">
-//<![CDATA[
-window.__TsmHiddenField = $get('ctl21_TSM');;(function() {
-                        function loadHandler() {
-                            var hf = $get('ctl22_TSSM');
-                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
-                            hf.value += ';Telerik.Sitefinity.Resources, Version=13.3.7647.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:3105d554-a2f7-41dc-9f71-ac414da2be04:7a90d6a';
-                            Sys.Application.remove_load(loadHandler);
-                        };
-                        Sys.Application.add_load(loadHandler);
-                    })();//]]>
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '037412a2-9b6f-45f3-996a-b08e22429624'));
+	});
 </script>
-</form>
-	<script src="/assets/scripts/sgds.js" type="text/javascript"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115761517-1"></script> <!-- Websparks -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113889936-1"></script>--> <!-- Staging -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11332444-5"></script>--> <!-- Production -->
+</div>
+	</div> <!-- inner column -->
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+	</div> <!-- inner row -->
 
-        gtag('config', 'UA-115761517-1'); //Websparks
-        //gtag('config', 'UA-113889936-1'); // Staging
-        //gtag('config', 'UA-11332444-5'); // Production
-    </script>
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
 
-    <!--Facebook Pixel Code -->
-    <script>
-        setTimeout(function () {
-            !function (f, b, e, v, n, t, s) { 
-                if (f.fbq) return;
-                n = f.fbq = function () { 
-                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0; 
-                n.version = '2.0'; 
-                n.queue = []; 
-                t = b.createElement(e); 
-                t.async = !0; 
-                t.src = v; 
-                s = b.getElementsByTagName(e)[0]; 
-                s.parentNode.insertBefore(t, s) 
-            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '390401731988315'); 
-            fbq('track', 'PageView');
-        }, 3000);
-    </script>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=390401731988315&ev=PageView&noscript=1" />
-    </noscript>
-    <!--End Facebook Pixel Code -->
-</body>
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="cc67540ef5-9b00-4835-89cf-b3504f544911" data-containerid="67540ef5-9b00-4835-89cf-b3504f544911" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="siteSidebarTS" class="siteSidebar">
+<aside data-cpRole="contentContainer" id="sidebarContainer1TS">	<div id="cc035a7b13-9bd2-4b42-999f-57b1fe9ad3f4" data-containerid="035a7b13-9bd2-4b42-999f-57b1fe9ad3f4" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="8199" class="rootNavMenu accordionNav">
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem8429" data-pageid="8429">
+		<div class="accordionNavItem">
+			<a href="/8429/Learning-from-the-Library" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Learning from the Library</a>
+		</div>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = false;
+        });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('*[id^="SideItem"]').each(function () {
+				var ids = $('[id="' + this.id + '"]');
+				if (ids.length > 1)
+					$.each(ids, function (index, value) {
+						value.id = value.id + '_' + index;
+					});
+			});
+
+			$('.hasAccordionChildren .openAccordionNav').click(function (e) {
+				e.preventDefault();
+				showHideAccordionMenuForSecondaryNav($(this));
+			});
+
+			$("#secondaryNav .grippy").each(function () {
+				menuManager.setupDraggableElement($(this), SIDE_MENU, '#secondaryNav');
+			});
+
+			$("#secondaryNav li").each(function () {
+				menuManager.setupDroppableAccordionElement($(this), SIDE_MENU);
+			});
+		});
+	</script>
+
+
+
+</nav><aside data-cpRole="contentContainer" id="sidebarContainer2TS">	<div id="ccef5db218-77c8-493a-b916-5103acfa13d1" data-containerid="ef5db218-77c8-493a-b916-5103acfa13d1" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div>
+</div></div>
+</div><!-- GBs --><div data-cpRole="structuralContainer" id="gbsContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="gbsTS">	<div id="cc02c1f6a6-19ac-47a5-9dc1-541513e378ca" data-containerid="02c1f6a6-19ac-47a5-9dc1-541513e378ca" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="35">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col8 first" style="" data-widgetcontainerid="99d882cb-d8db-413b-be9d-0a043ab2177f">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col8 first last idc6c0da6f-ace4-445b-bc3f-c61464210d45" style="" data-widgetcontainerid="c6c0da6f-ace4-445b-bc3f-c61464210d45">
+	
+<div data-widget-id="04be6c3c-9be6-4c60-a8ef-f472cfd43718" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget04be6c3c-9be6-4c60-a8ef-f472cfd43718" class="widget widgetGraphicLinks skin23 widgetOptionSet4 wide" data-elementqueryclasses='{"wide-narrow":"min-width:23em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/141/Job-Opportunities" target="_self" class="fancyButton fancyButton1184 " >
+		<span>
+			<span><span class="text">Jobs</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1184.fancyButton:link,.fancyButton1184.fancyButton:visited, .fancyButton1184div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343604');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1184.fancyButton:hover,.fancyButton1184.fancyButton:focus,.fancyButton1184.fancyButton:active,.fancyButton1184.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1184.fancyButton:link > span,.fancyButton1184.fancyButton:visited > span, .fancyButton1184div.fancyButton > span{
+}
+.fancyButton1184.fancyButton:hover > span,.fancyButton1184.fancyButton:focus > span,.fancyButton1184.fancyButton:active > span,.fancyButton1184.fancyButton.hover > span{
+}
+.fancyButton1184.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1184 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1184.fancyButton:hover .text,.fancyButton1184.fancyButton:focus .text,.fancyButton1184.fancyButton:active .text,.fancyButton1184.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1184:hover .text:after,
+.fancyButton1184:focus .text:after,
+.fancyButton1184:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/1225/FCG-TV" target="_self" class="fancyButton fancyButton1185 " >
+		<span>
+			<span><span class="text">FCG TV</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1185.fancyButton:link,.fancyButton1185.fancyButton:visited, .fancyButton1185div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343603');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1185.fancyButton:hover,.fancyButton1185.fancyButton:focus,.fancyButton1185.fancyButton:active,.fancyButton1185.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1185.fancyButton:link > span,.fancyButton1185.fancyButton:visited > span, .fancyButton1185div.fancyButton > span{
+}
+.fancyButton1185.fancyButton:hover > span,.fancyButton1185.fancyButton:focus > span,.fancyButton1185.fancyButton:active > span,.fancyButton1185.fancyButton.hover > span{
+}
+.fancyButton1185.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1185 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1185.fancyButton:hover .text,.fancyButton1185.fancyButton:focus .text,.fancyButton1185.fancyButton:active .text,.fancyButton1185.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1185:hover .text:after,
+.fancyButton1185:focus .text:after,
+.fancyButton1185:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col8" style="" data-widgetcontainerid="e8cbacee-7919-4f88-82e4-c172ebe9ea96">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col8 first last ida1f43af8-aacd-46bb-b1c9-6b612b5a8b0c" style="" data-widgetcontainerid="a1f43af8-aacd-46bb-b1c9-6b612b5a8b0c">
+	
+<div data-widget-id="559e7007-3b2d-4251-8f7d-174ebbf6ee42" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget559e7007-3b2d-4251-8f7d-174ebbf6ee42" class="widget widgetGraphicLinks skin23 widgetOptionSet4 wide" data-elementqueryclasses='{"wide-narrow":"min-width:23em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/GIS" target="_self" class="fancyButton fancyButton1186 " >
+		<span>
+			<span><span class="text">Maps</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1186.fancyButton:link,.fancyButton1186.fancyButton:visited, .fancyButton1186div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343605');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1186.fancyButton:hover,.fancyButton1186.fancyButton:focus,.fancyButton1186.fancyButton:active,.fancyButton1186.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1186.fancyButton:link > span,.fancyButton1186.fancyButton:visited > span, .fancyButton1186div.fancyButton > span{
+}
+.fancyButton1186.fancyButton:hover > span,.fancyButton1186.fancyButton:focus > span,.fancyButton1186.fancyButton:active > span,.fancyButton1186.fancyButton.hover > span{
+}
+.fancyButton1186.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1186 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1186.fancyButton:hover .text,.fancyButton1186.fancyButton:focus .text,.fancyButton1186.fancyButton:active .text,.fancyButton1186.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1186:hover .text:after,
+.fancyButton1186:focus .text:after,
+.fancyButton1186:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/7974/Permits-and-Inspections" target="_self" class="fancyButton fancyButton1187 " >
+		<span>
+			<span><span class="text">Permits &amp; Inspections</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1187.fancyButton:link,.fancyButton1187.fancyButton:visited, .fancyButton1187div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343606');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1187.fancyButton:hover,.fancyButton1187.fancyButton:focus,.fancyButton1187.fancyButton:active,.fancyButton1187.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1187.fancyButton:link > span,.fancyButton1187.fancyButton:visited > span, .fancyButton1187div.fancyButton > span{
+}
+.fancyButton1187.fancyButton:hover > span,.fancyButton1187.fancyButton:focus > span,.fancyButton1187.fancyButton:active > span,.fancyButton1187.fancyButton.hover > span{
+}
+.fancyButton1187.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1187 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1187.fancyButton:hover .text,.fancyButton1187.fancyButton:focus .text,.fancyButton1187.fancyButton:active .text,.fancyButton1187.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1187:hover .text:after,
+.fancyButton1187:focus .text:after,
+.fancyButton1187:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col8 last" style="" data-widgetcontainerid="a39cc05e-b653-461b-83a3-1cfb7a23c9ba">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col8 first last id01ec7045-1b69-4a91-ad86-e5065840d330" style="" data-widgetcontainerid="01ec7045-1b69-4a91-ad86-e5065840d330">
+	
+<div data-widget-id="7f5d6020-8ca4-4f9d-ba35-021de7b39278" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget7f5d6020-8ca4-4f9d-ba35-021de7b39278" class="widget widgetGraphicLinks skin23 widgetOptionSet4 wide" data-elementqueryclasses='{"wide-narrow":"min-width:23em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/105/TransIT" target="_self" class="fancyButton fancyButton1188 " >
+		<span>
+			<span><span class="text">Transit</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1188.fancyButton:link,.fancyButton1188.fancyButton:visited, .fancyButton1188div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343607');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1188.fancyButton:hover,.fancyButton1188.fancyButton:focus,.fancyButton1188.fancyButton:active,.fancyButton1188.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1188.fancyButton:link > span,.fancyButton1188.fancyButton:visited > span, .fancyButton1188div.fancyButton > span{
+}
+.fancyButton1188.fancyButton:hover > span,.fancyButton1188.fancyButton:focus > span,.fancyButton1188.fancyButton:active > span,.fancyButton1188.fancyButton.hover > span{
+}
+.fancyButton1188.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1188 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1188.fancyButton:hover .text,.fancyButton1188.fancyButton:focus .text,.fancyButton1188.fancyButton:active .text,.fancyButton1188.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1188:hover .text:after,
+.fancyButton1188:focus .text:after,
+.fancyButton1188:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/8235/FCG-FixIT" target="_self" class="fancyButton fancyButton1189 " >
+		<span>
+			<span><span class="text">FCG FixIt</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1189.fancyButton:link,.fancyButton1189.fancyButton:visited, .fancyButton1189div.fancyButton{
+	padding-top: 86px;
+	background-image: url('/ImageRepository/Document?documentID=343602');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1189.fancyButton:hover,.fancyButton1189.fancyButton:focus,.fancyButton1189.fancyButton:active,.fancyButton1189.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton1189.fancyButton:link > span,.fancyButton1189.fancyButton:visited > span, .fancyButton1189div.fancyButton > span{
+}
+.fancyButton1189.fancyButton:hover > span,.fancyButton1189.fancyButton:focus > span,.fancyButton1189.fancyButton:active > span,.fancyButton1189.fancyButton.hover > span{
+}
+.fancyButton1189.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	padding-top: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+line-height: 1.2;
+position: relative;
+}
+
+.fancyButton1189 .text:after {
+content: "";
+position: absolute;
+background-color: #488E9F;
+height: 4px;
+width: 34px;
+max-width: 100%;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: all .3s ease-in-out;
+}
+.fancyButton1189.fancyButton:hover .text,.fancyButton1189.fancyButton:focus .text,.fancyButton1189.fancyButton:active .text,.fancyButton1189.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.fancyButton1189:hover .text:after,
+.fancyButton1189:focus .text:after,
+.fancyButton1189:active .text:after {
+width: 102px;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Calendar/Carousel --><!-- <div data-cpRole="structuralContainer" id="homeContainer1">
+    <div class="siteWrap2">
+      <div data-cpRole="contentContainer" id="homeContent1a"></div>
+    </div>
+  </div> --><!-- Footer --><footer data-cpRole="structuralContainer" id="footerContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="footerTS">	<div id="cc8799f5ab-70e1-4dc6-9f5b-e3371d26d2c0" data-containerid="8799f5ab-70e1-4dc6-9f5b-e3371d26d2c0" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="33708f96-5454-4db9-90ce-7fc56c04e91f">
+				
+	<div class="row nest first wide">
+
+	
+	<div class="inner col col24 first last id68e7e976-9915-4071-b508-f6d1c0ee998b" style="" data-widgetcontainerid="68e7e976-9915-4071-b508-f6d1c0ee998b">
+	
+    <div data-widget-id="52cf2eea-3b80-4b9b-a2dc-b4551d99928d" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv52cf2eea-3b80-4b9b-a2dc-b4551d99928d" class="widget widgetInfoAdvanced skin22 widgetOptionSet31 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header52cf2eea-3b80-4b9b-a2dc-b4551d99928d">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row autoWidths center wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><a href="/"><img src="/ImageRepository/Document?documentId=343601" class="fr-dib" alt="Frederick County Home Page"></a></p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv52cf2eea-3b80-4b9b-a2dc-b4551d99928d .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest wide">
+
+	
+	<div class="inner col col24 first last id853d8de5-60e5-4978-b55c-9285fc1cef85" style="" data-widgetcontainerid="853d8de5-60e5-4978-b55c-9285fc1cef85">
+	
+<div data-widget-id="ae88d0b7-000a-483f-8583-e0dda01abae7" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetae88d0b7-000a-483f-8583-e0dda01abae7" class="widget widgetGraphicLinks skin22 widgetOptionSet30 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid5 ">	
+			<div class="row autoWidths center wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.facebook.com/FredCoGovMD" target="_blank" class="fancyButton fancyButton1190 "  aria-label="Facebook Opens in new window">
+		<span>
+			<span><span class="text">Facebook</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1190.fancyButton:link,.fancyButton1190.fancyButton:visited, .fancyButton1190div.fancyButton{
+	padding-right: 2px;
+	padding-left: 22px;
+	background-image: url('/ImageRepository/Document?documentID=343608');
+	background-repeat: no-repeat;
+	background-position: left center;
+background-size: 17px;
+width: fit-content;
+margin: 0 auto;}
+.fancyButton1190.fancyButton:hover,.fancyButton1190.fancyButton:focus,.fancyButton1190.fancyButton:active,.fancyButton1190.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton1190.fancyButton:link > span,.fancyButton1190.fancyButton:visited > span, .fancyButton1190div.fancyButton > span{
+}
+.fancyButton1190.fancyButton:hover > span,.fancyButton1190.fancyButton:focus > span,.fancyButton1190.fancyButton:active > span,.fancyButton1190.fancyButton.hover > span{
+}
+.fancyButton1190.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton1190.fancyButton:hover .text,.fancyButton1190.fancyButton:focus .text,.fancyButton1190.fancyButton:active .text,.fancyButton1190.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://instagram.com/fredcogovmd?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="fancyButton fancyButton1191 "  aria-label="Instagram Opens in new window">
+		<span>
+			<span><span class="text">Instagram</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1191.fancyButton:link,.fancyButton1191.fancyButton:visited, .fancyButton1191div.fancyButton{
+	padding-right: 2px;
+	padding-left: 22px;
+	background-image: url('/ImageRepository/Document?documentID=343609');
+	background-repeat: no-repeat;
+	background-position: left center;
+background-size: 17px;
+width: fit-content;
+margin: 0 auto;}
+.fancyButton1191.fancyButton:hover,.fancyButton1191.fancyButton:focus,.fancyButton1191.fancyButton:active,.fancyButton1191.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton1191.fancyButton:link > span,.fancyButton1191.fancyButton:visited > span, .fancyButton1191div.fancyButton > span{
+}
+.fancyButton1191.fancyButton:hover > span,.fancyButton1191.fancyButton:focus > span,.fancyButton1191.fancyButton:active > span,.fancyButton1191.fancyButton.hover > span{
+}
+.fancyButton1191.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton1191.fancyButton:hover .text,.fancyButton1191.fancyButton:focus .text,.fancyButton1191.fancyButton:active .text,.fancyButton1191.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.linkedin.com/company/frederick-county-government/" target="_blank" class="fancyButton fancyButton1192 "  aria-label="LinkedIn Opens in new window">
+		<span>
+			<span><span class="text">LinkedIn</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1192.fancyButton:link,.fancyButton1192.fancyButton:visited, .fancyButton1192div.fancyButton{
+	padding-right: 2px;
+	padding-left: 22px;
+	background-image: url('/ImageRepository/Document?documentID=343610');
+	background-repeat: no-repeat;
+	background-position: left center;
+background-size: 17px;
+width: fit-content;
+margin: 0 auto;}
+.fancyButton1192.fancyButton:hover,.fancyButton1192.fancyButton:focus,.fancyButton1192.fancyButton:active,.fancyButton1192.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton1192.fancyButton:link > span,.fancyButton1192.fancyButton:visited > span, .fancyButton1192div.fancyButton > span{
+}
+.fancyButton1192.fancyButton:hover > span,.fancyButton1192.fancyButton:focus > span,.fancyButton1192.fancyButton:active > span,.fancyButton1192.fancyButton.hover > span{
+}
+.fancyButton1192.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton1192.fancyButton:hover .text,.fancyButton1192.fancyButton:focus .text,.fancyButton1192.fancyButton:active .text,.fancyButton1192.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://twitter.com/home" target="_blank" class="fancyButton fancyButton1193 "  aria-label="Twitter Opens in new window">
+		<span>
+			<span><span class="text">Twitter</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1193.fancyButton:link,.fancyButton1193.fancyButton:visited, .fancyButton1193div.fancyButton{
+	padding-right: 2px;
+	padding-left: 22px;
+	background-image: url('/ImageRepository/Document?documentID=343616');
+	background-repeat: no-repeat;
+	background-position: left center;
+background-size: 17px;
+width: fit-content;
+margin: 0 auto;}
+.fancyButton1193.fancyButton:hover,.fancyButton1193.fancyButton:focus,.fancyButton1193.fancyButton:active,.fancyButton1193.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton1193.fancyButton:link > span,.fancyButton1193.fancyButton:visited > span, .fancyButton1193div.fancyButton > span{
+}
+.fancyButton1193.fancyButton:hover > span,.fancyButton1193.fancyButton:focus > span,.fancyButton1193.fancyButton:active > span,.fancyButton1193.fancyButton.hover > span{
+}
+.fancyButton1193.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton1193.fancyButton:hover .text,.fancyButton1193.fancyButton:focus .text,.fancyButton1193.fancyButton:active .text,.fancyButton1193.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://youtube.com/@FrederickCountyMD" target="_blank" class="fancyButton fancyButton1194 "  aria-label="YouTube Opens in new window">
+		<span>
+			<span><span class="text">YouTube</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton1194.fancyButton:link,.fancyButton1194.fancyButton:visited, .fancyButton1194div.fancyButton{
+	padding-right: 2px;
+	padding-left: 22px;
+	background-image: url('/ImageRepository/Document?documentID=343618');
+	background-repeat: no-repeat;
+	background-position: left center;
+background-size: 17px;
+width: fit-content;
+margin: 0 auto;}
+.fancyButton1194.fancyButton:hover,.fancyButton1194.fancyButton:focus,.fancyButton1194.fancyButton:active,.fancyButton1194.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton1194.fancyButton:link > span,.fancyButton1194.fancyButton:visited > span, .fancyButton1194div.fancyButton > span{
+}
+.fancyButton1194.fancyButton:hover > span,.fancyButton1194.fancyButton:focus > span,.fancyButton1194.fancyButton:active > span,.fancyButton1194.fancyButton.hover > span{
+}
+.fancyButton1194.fancyButton .text{
+	color: #383838;
+	font-family: "Montserrat";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton1194.fancyButton:hover .text,.fancyButton1194.fancyButton:focus .text,.fancyButton1194.fancyButton:active .text,.fancyButton1194.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest wide">
+
+	
+	<div class="inner col col24 first last id9aae2ad0-0458-4966-bada-0f85f7687c15" style="" data-widgetcontainerid="9aae2ad0-0458-4966-bada-0f85f7687c15">
+	
+	<div data-widget-id="e336df7b-e788-4cdb-b7a0-c0cc780de5f4" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklinke336df7b-e788-4cdb-b7a0-c0cc780de5f4" class="widget widgetQuickLinks skin22 widgetOptionSet33 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Quick Links">
+			<header class="widgetHeader" id="quickLinksHeadere336df7b-e788-4cdb-b7a0-c0cc780de5f4">
+		<div class="">
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid6 ">
+        <div class="row autoWidths center narrow">
+				<div class="col col1 first ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/3703/ADA-Information" target="_self" >ADA Information</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/directory.aspx" target="_self" >Contact Us - County Staff Directory</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/site/copyright" target="_self" >Copyright Notices</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/7671/Employees" target="_self" >Employees</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/DocumentCenter/View/346823/Corrected-FCG-Org-Chart---July-11-2023" target="_blank"  aria-label="Organizational Chart opens in new window">Organizational Chart</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://frederickcountymd.govqa.us/WEBAPP/_rs/(S(ausywy20nqswwslbanshvflp))/supporthome.aspx" target="_self" >Submit Records Request</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+
+	
+	<div class="inner col col24 first last idb79297c2-ea27-4825-b8a6-bec5b52bca42" style="" data-widgetcontainerid="b79297c2-ea27-4825-b8a6-bec5b52bca42">
+	
+    <div data-widget-id="992a8002-59e1-47fc-adca-8c2323081585" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv992a8002-59e1-47fc-adca-8c2323081585" class="widget widgetInfoAdvanced skin22 widgetOptionSet31 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header992a8002-59e1-47fc-adca-8c2323081585">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid4 ">
+		<div class="row autoWidths center wide">
+					<div class="col col1 first ">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><strong>Frederick County Government</strong></p>
+</li>						</ol>
+					</div>
+					<div class="col col1  ">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p>12 E. Church St. Frederick, MD 21701</p>
+</li>						</ol>
+					</div>
+					<div class="col col1  ">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p>Ph: <a href="tel:3016009000">301-600-9000</a></p>
+</li>						</ol>
+					</div>
+					<div class="col col1  last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p>Monday - Friday 8:00 Am - 4:00 Pm</p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv992a8002-59e1-47fc-adca-8c2323081585 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</footer><!-- Powered By --><div data-cpRole="structuralContainer" id="poweredByContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="poweredByTS">	<div id="ccfa3bb6bf-cdd3-42b6-a418-cd68f9a9cd75" data-containerid="fa3bb6bf-cdd3-42b6-a418-cd68f9a9cd75" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="6cd13770-0259-4470-9cce-96f22ddb0b2a">
+				
+	<div class="row nest first last wide">
+
+	
+	<div class="inner col col24 first last id8a5e38ed-e4ad-40d1-bf75-05d5a5842642" style="" data-widgetcontainerid="8a5e38ed-e4ad-40d1-bf75-05d5a5842642">
+	
+ 
+	<div data-widget-id='7cb59e75-cbb1-41cf-88fd-36f9c8e19031' data-moduleName="customHtml" id='widgetCustomHtml7cb59e75-cbb1-41cf-88fd-36f9c8e19031' class="widget widgetCustomHtml skin25 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBody7cb59e75-cbb1-41cf-88fd-36f9c8e19031">
+		<div id="customHtml7cb59e75-cbb1-41cf-88fd-36f9c8e19031"><div><style>
+  /* CP icon */
+  .cpBylineIconTS {
+    color: #fff;
+  }
+  /* CP Text */
+  .cpBylineTextTS,
+  .cpBylineTextTS a:link {
+    color: #fff;
+  }
+
+  .cpBylineTS {
+    text-align: center;
+  }
+  
+  .cpBylineIconTS {
+    fill: currentColor;
+    width: 39px;
+    height: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="widgetItem cpBylineTS">
+  <span class="cpBylineTextTS">Government Websites by <a href="https://connect.civicplus.com/referral">CivicPlus&reg;</a></span>
+</div>
+</div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<script src="/-1856420368.js" type="text/javascript"></script>
+	<!-- Google Translate -->
+<script type="text/javascript">
+	var translateActiveCookie = getCookieValue('translateActive');
+
+	if (translateActiveCookie == 'true') {
+		enableGoogleTranslate();
+	} else {
+		var button = '<a href="#translate" class="translateWidget" title="Enable Google Translate" style="background-color: #FFF;border-color: #9b9b9b #d5d5d5 transparent #d5d5d5;border-style: solid;border-width: 1px 1px 0 1px;bottom: 0px;color: #000;cursor: pointer;font-size: .9em;padding: 2px 6px 3px 4px;position: fixed;right: 20px;z-index: 5;">';
+		button += '<img alt="Google Translate Icon" src="/Assets/Images/GoogleTranslate.gif" style="box-sizing: content-box !important;height:19px;margin: -2px 0 0 -2px;padding-right: 5px;width:19px;">Enable Google Translate</a>';
+		$('div[data-cprole="structuralContainer"]').last().after(button);
+	}
+
+	function googleTranslateElementInit() {
+  		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+
+	function enableGoogleTranslate() {
+		$('#google_translate_element').show();
+		var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+		sz.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+		$('div[data-cprole="structuralContainer"]').last().after('<div id="google_translate_element" style="position: fixed; bottom: 0px; right: 20px; z-index: 5;"></div>');
+	        document.cookie = "translateActive=true; expires=12/31/2999; path=/";
+	}
+
+	$('a.translateWidget').unbind('click').click(function (e) {
+		$(this).hide();
+		enableGoogleTranslate();
+		return false;
+	});
+</script><!-- End Translate -->
+
+<!-- Browsealoud-->
+<script type="text/javascript">var _baTheme=0, _baUseCookies=true, _baHideOnLoad=true;</script>
+<script type="text/javascript" src="//www.browsealoud.com/plus/scripts/ba.js"></script>
+<!-- End Browsealoud -->
+
+<!-- Frase -->
+<script id="frase-script" data-hash="fddb952db93449cf9c08dfc14a3cb32b" src="https://app.frase.io/js/libraries/bot.js"></script>
+
+<!-- End Frase -->
+
+
+<!-- Fixed Nav Adjustment -->
+<script>
+  function getValueTS(elem, attr) {
+    const val = elem.css(attr);
+    if (val === undefined) return undefined;
+    const num = parseInt(val, 10);
+    if (num === NaN) return undefined;
+    return num;
+  }
+
+  function clampTS(number, min, max) {
+    return Math.min(Math.max(number, min), max);
+  }
+
+  function isPageEditingTS() {
+    return (
+      $("#doneEditing").length > 0 || // In live edit
+      typeof DesignCenter !== "undefined" // In theme manager
+    );
+  }
+
+  const bgColorRegexTS = /rgba\((\d+), (\d+), (\d+), (\d*\.?\d*)\)/;
+  function isTransparentTS(elem) {
+    const bg = elem.css('background-color');
+    if (typeof bg !== "string" || !bg.startsWith('rgba(')) return false;
+    const matchState = bg.match(bgColorRegexTS);
+    if (!matchState || matchState.length !== 5) return false;
+    const alpha = parseFloat(matchState[4], 10);
+    if (!(alpha >= 0 && alpha < 1)) return false;
+    return true;
+  }
+
+  function iterateLeftpads(cb) {
+    const containersTS = $("[class^='siteWrap'],[class*=' siteWrap']");
+    for (let i = 0; i < containersTS.length; i++) {
+      const containerTS = containersTS[i];
+      // Skip the body container and anything with data-skip-leftpad
+      if (
+        containerTS.id !== "bodyContainerTS" &&
+        containerTS.getAttribute('data-skip-leftpad') === null
+      ) {
+        cb(containerTS);
+      }
+    }
+  }
+
+  const anchor = $("#divToolbars");
+  const anchor2 = $("#headerContainerTS")
+
+  // Outer banner padding (push banner down)
+  const outerSizingTS = $("#bannerContainerTS");
+  // Inner banner padding (push banner content down) - Transparent header OR on attaching headers
+  const innerSizingTS = $("#bannerSizingTS");
+  const bodyContainerTS = $("#bodyContainerTS");
+
+  const forceUnfixClassTS = "forceUnfixTS";
+
+  const fixedTopTS = $(".fixedTopTS");
+  const fixedBottomTS = $(".fixedBottomTS");
+  const fixedLeftTS = $(".fixedLeftTS");
+
+  var initialTopTS;
+  var topAttachTS;
+  if (fixedTopTS && fixedTopTS.length === 1) {
+    initialTopTS = getValueTS(fixedTopTS, 'top');
+    const attachment = fixedTopTS.attr('data-attach');
+    if (attachment) topAttachTS = $("#" + attachment);
+    if (!topAttachTS || topAttachTS.length !== 1) topAttachTS = undefined;
+  }
+
+  function resizeAdjustmentTS() {
+    const editing = isPageEditingTS();
+
+    // Fixed top script
+    (function () {
+      if (!fixedTopTS || fixedTopTS.length !== 1 || initialTopTS === undefined) return;
+
+      if (editing) {
+        fixedTopTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedTopTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      const topPosition = fixedTopTS.css('position');
+      if (topPosition === 'fixed') {
+        if (topAttachTS) {
+          scrollAdjustmentTS();
+        } else {
+          const anchorHeight = anchor.outerHeight() - 1;
+          fixedTopTS.css('top', anchorHeight + initialTopTS);
+        }
+      } else {
+        fixedTopTS.css('top', initialTopTS);
+      }
+
+      if (topPosition === 'fixed' || topPosition === 'absolute') {
+        // Bump the banner content down
+        if (isTransparentTS(fixedTopTS)) {
+          innerSizingTS.css('padding-top', initialTopTS + fixedTopTS.outerHeight() - 1);
+          outerSizingTS.css('padding-top', '');
+
+          try {
+            window.Pages.onResizeHandlersExecute();
+          } catch (e) { }
+        } else {
+          outerSizingTS.css('padding-top', fixedTopTS.outerHeight() - 1);
+          innerSizingTS.css('padding-top', '');
+        }
+      } else {
+        innerSizingTS.css('padding-top', '');
+        outerSizingTS.css('padding-top', '');
+      }
+    })();
+
+    // Fixed bottom script
+    (function () {
+      if (!fixedBottomTS || fixedBottomTS.length === 0) return;
+
+      // If the widget has gone narrow, force unfix
+      if (editing || fixedBottomTS.outerHeight() > 200) {
+        fixedBottomTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedBottomTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      if (fixedBottomTS.css('position') === 'fixed') {
+        bodyContainerTS.css('padding-bottom', fixedBottomTS.outerHeight());
+      } else {
+        bodyContainerTS.css('padding-bottom', '');
+      }
+    })();
+
+    // Fixed left script
+    (function () {
+      if (!fixedLeftTS || fixedLeftTS.length === 0) return;
+
+      if (editing) {
+        fixedLeftTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedLeftTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      if (fixedLeftTS.css('position') === 'fixed') {
+        const anchorHeight = anchor.outerHeight() - 1;
+        fixedLeftTS.css('top', anchorHeight);
+        const leftBoundingTS = fixedLeftTS[0].getBoundingClientRect();
+        iterateLeftpads(function (containerTS) {
+          const containerBoundingTS = containerTS.getBoundingClientRect();
+          if (containerBoundingTS.left <= leftBoundingTS.right) {
+            $(containerTS).css('padding-left', leftBoundingTS.width + 16);
+          }
+        });
+      } else {
+        fixedLeftTS.css('top', '');
+        iterateLeftpads(function (containerTS) {
+          $(containerTS).css('padding-left', '');
+        });
+      }
+    })();
+  }
+
+  function scrollAdjustmentTS() {
+    if (!fixedTopTS || fixedTopTS.length !== 1 || !topAttachTS || topAttachTS.length !== 1) return;
+    const topPosition = fixedTopTS.css('position');
+    if (topPosition === 'fixed' || topPosition === 'absolute') {
+      const anchorBounding = anchor[0].getBoundingClientRect();
+      const attachBounding = topAttachTS[0].getBoundingClientRect();
+      const scrollTop = $(window).scrollTop();
+
+      fixedTopTS.css('top', Math.max(anchorBounding.bottom - 1, attachBounding.bottom));
+    } else {
+      fixedTopTS.css('top', initialTopTS);
+    }
+  }
+
+  $(window).load(function () {
+    setTimeout(function () {
+      resizeAdjustmentTS();
+    }, 350);
+
+    $(window).scroll(function () {
+      scrollAdjustmentTS();
+    });
+
+    var adjustTimeoutTS;
+    $(window).resize(function () {
+      clearTimeout(adjustTimeoutTS);
+      adjustTimeoutTS = setTimeout(function () {
+        resizeAdjustmentTS();
+      }, 350);
+    });
+
+    $.when(window.Pages.angularToolbarComplete).done(function () {
+      resizeAdjustmentTS();
+    });
+  });
+</script>
+<!-- End Fixed Nav Adjustment -->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Libre+Baskerville:700,italic,regular|Montserrat:100,100italic,200,200italic,300,300italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
 </html>

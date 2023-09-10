@@ -36,8 +36,6 @@ def get_links(html_file,folder_prefix = 'public'):
     links_file = '{}/links.txt'.format(output_folder)
     if os.path.exists(links_file):
         return load_links(links_file)
-    
-
 
     with open(html_file, 'r') as f:
         html = f.read()
@@ -58,7 +56,9 @@ def get_links(html_file,folder_prefix = 'public'):
     #1, 2, 3, ... in the output folder
     for i, link in enumerate(links):
         # wget the link
-        os.system('wget -O {}/{}.html {}'.format(output_folder, i+1, link))
+        os.system('curl -o {}/{}.html {}'.format(output_folder, i+1, link))
+        # 'curl -o {}/{}.html {}'.format(output_folder, i+1, link)
+
         #print the link
         print(link)
     #save links to file in the folder
@@ -90,3 +90,4 @@ if __name__ == '__main__':
     #load the html file
     replace_links(micro_links, 'regular_search_micro.html',"regular_search_micro")
     replace_links(xyz_links, 'xyz_search_micro.html',"xyz_search_micro")
+    print()
