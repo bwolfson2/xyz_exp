@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 10 Sep 2023 19:33:32 at https://www.nrdc.org/stories/reducing-food-waste-eight-tips-home-cooks +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.nrdc.org/stories/reducing-food-waste-eight-tips-home-cooks -O1 "C:\My Web Sites\manual_4" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:41:25	Warning: 	Moved Permanently for https://www.nrdc.org/stories/truth-about-tap/
+19:41:25	Warning: 	File has moved from https://www.nrdc.org/stories/truth-about-tap/ to https://www.nrdc.org/stories/truth-about-tap
+19:49:19	Warning: 	Found for https://www.nrdc.org/stories/chrome-extension://
+19:49:19	Warning: 	Redirected link is identical because of 'URL Hack' option: https://www.nrdc.org/stories/chrome-extension:// and https://www.nrdc.org/stories/chrome-extension:/
+19:49:19	Warning: 	File has moved from https://www.nrdc.org/stories/chrome-extension:// to https://www.nrdc.org/stories/chrome-extension:/
+19:49:19	Error: 	"Not Found" (404) at link https://www.nrdc.org/stories/$1/ (from https://www.instagram.com/embed.js)
+19:49:19	Error: 	"Not Found" (404) at link https://www.nrdc.org/stories/embed/ (from https://www.instagram.com/embed.js)
+19:49:19	Error: 	"Not Found" (404) at link https://www.nrdc.org/stories/captioned/ (from https://www.instagram.com/embed.js)
+19:55:11	Error: 	"Not Found" (404) at link https://www.nrdc.org/sites/default/files/styles/ec_home_alert_large/public/no-drilling-where-living-poster-eng.png (from https://www.nrdc.org/stories/six-ways-help-end-neighborhood-oil-drilling-california)
+19:55:11	Error: 	"Not Found" (404) at link https://www.nrdc.org/sites/default/files/styles/ec_home_alert_large/public/no-drilling-where-living-poster-span.png (from https://www.nrdc.org/stories/six-ways-help-end-neighborhood-oil-drilling-california)
+19:57:13	Warning: 	Retry after error -4 (Connect Error) at link https://s-media-cache-ak0.pinimg.com/736x/0c/0e/11/0c0e11dfd70d183bd384e0faec4fa95c.jpg (from https://www.nrdc.org/stories/smugglers-fridge-no-place-weird-and-wonderful-pangolin)
+19:57:43	Error: 	"Not Found" (404) at link https://www.nrdc.org/stories/about (from https://www.nrdc.org/stories/poachers-abuse-international-law-loophole-sell-some-rarest-animals-earth)
+19:57:55	Error: 	"Not Found" (404) at link https://www.nrdc.org/stories/ancient-place-deserves-membership-americas-culture-club (from https://www.nrdc.org/stories/president-obamas-national-monument-dos-he-leaves-office)
+19:58:29	Warning: 	Retry after error -4 (Connect Error) at link https://s-media-cache-ak0.pinimg.com/736x/0c/0e/11/0c0e11dfd70d183bd384e0faec4fa95c.jpg (from https://www.nrdc.org/stories/smugglers-fridge-no-place-weird-and-wonderful-pangolin)
+19:59:32	Error: 	"Connect Error" (-4) after 2 retries at link https://s-media-cache-ak0.pinimg.com/736x/0c/0e/11/0c0e11dfd70d183bd384e0faec4fa95c.jpg (from https://www.nrdc.org/stories/smugglers-fridge-no-place-weird-and-wonderful-pangolin)
+
+HTTrack Website Copier/3.49-2 mirror complete in 26 minutes 46 seconds : 3372 links scanned, 3359 files written (298110953 bytes overall) [288473484 bytes received at 179622 bytes/sec], 17042302 bytes transferred using HTTP compression in 91 files, ratio 23%, 74.2 requests per connection
+(8 errors, 7 warnings, 0 messages)

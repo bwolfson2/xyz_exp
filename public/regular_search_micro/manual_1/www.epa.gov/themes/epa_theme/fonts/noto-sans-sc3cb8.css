@@ -1,0 +1,16 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans SC homepage';
+  font-style: normal;
+  font-weight: 400;
+  src: url('noto-sans-sc/homepage-NotoSansSC-Regular.woff2')
+  format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('noto-sans-sc/NotoSansSC-Regular.woff2')
+  format('woff2');
+}

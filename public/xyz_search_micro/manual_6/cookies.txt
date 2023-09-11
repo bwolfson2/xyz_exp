@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+frederickcountymd.gov	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	m1p5jwkcm3mn0accvf2ru2zf
+frederickcountymd.gov	TRUE	/	FALSE	1999999999	SameSite	None
+app.frase.io	TRUE	/	FALSE	1999999999	AWSALB	uG2r9JqeVaVZ5KoNldB5iwbC+4hWAZ9PIqZdYk+UUFotMdfTGdVAHXOC/Rn7pFYF2xj+4QeKrlCOwUWA77n3P3weFRzYhqHtSQSnXBtquxcJc5ifZ+I4CmEl+KMa
+app.frase.io	TRUE	/	FALSE	1999999999	AWSALBCORS	uG2r9JqeVaVZ5KoNldB5iwbC+4hWAZ9PIqZdYk+UUFotMdfTGdVAHXOC/Rn7pFYF2xj+4QeKrlCOwUWA77n3P3weFRzYhqHtSQSnXBtquxcJc5ifZ+I4CmEl+KMa
+app.frase.io	TRUE	/	FALSE	1999999999	SameSite	None
+frederickcountymd.gov	TRUE	/	FALSE	1999999999	CP_IsMobile	false
+

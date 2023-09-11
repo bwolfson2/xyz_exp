@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.fda.gov	TRUE	/	FALSE	1999999999	AWSALB	0Q7jlRBbNyqRzVZYf/BfyVn5cePCD7F97PCMLoJ7h7aK/2G4rNx3NfKTYg0rMOofUsNY+hUTcHvE2aSUDwvUY0eVc6vk1tZxLAIiE4XcRTPWk2ypnJ4rGxwHMwoV
+www.fda.gov	TRUE	/	FALSE	1999999999	AWSALBCORS	0Q7jlRBbNyqRzVZYf/BfyVn5cePCD7F97PCMLoJ7h7aK/2G4rNx3NfKTYg0rMOofUsNY+hUTcHvE2aSUDwvUY0eVc6vk1tZxLAIiE4XcRTPWk2ypnJ4rGxwHMwoV
+www.fda.gov	TRUE	/	FALSE	1999999999	SameSite	None
+
