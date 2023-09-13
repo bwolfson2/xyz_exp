@@ -191,17 +191,21 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz
     <script>
       // Retrieve the user ID from localStorage
       var userId = localStorage.getItem("userId");
-    
+
       // Create the Matomo Tag Manager (MTM) object
-      var _mtm = window._mtm = window._mtm || [];
-    
+      var _paq = window._paq = window._paq || [];
+
       // Set the user ID in MTM if it exists
       if (userId) {
-        _mtm.push(['setUserId', userId]);
+        _paq.push(['setUserId', userId]);
+        _paq.push(['trackPageView']);
       }
-    
+
       // Initialize Matomo Tag Manager
-      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      var u = "https://silveranabelle7tiinysite.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+      _paq.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
       (function() {
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
