@@ -64,7 +64,31 @@
   
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7b850d56d27c3c2ea70a34a23/8fe5d1fd852f801ddf38f97a2.js");</script>
 
-</head>
+
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
+
+
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-287 node-type-tip blogpage section-tips" >
       <p class="skip-link__wrapper">
       <a href="#main-menu" class="skip-link visually-hidden visually-hidden--focusable" id="skip-link">Jump to navigation</a>

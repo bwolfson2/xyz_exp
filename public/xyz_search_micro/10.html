@@ -50,7 +50,28 @@
 <link rel="icon" href="https://olioapp.com/en/wp-content/uploads/sites/1/2023/03/cropped-icon-512-1-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://olioapp.com/en/wp-content/uploads/sites/1/2023/03/cropped-icon-512-1-180x180.png" />
 <meta name="msapplication-TileImage" content="https://olioapp.com/en/wp-content/uploads/sites/1/2023/03/cropped-icon-512-1-270x270.png" />
-</head>
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
 
 <body class="home page-template-default page page-id-2 wp-embed-responsive has-header">
     

@@ -44,8 +44,31 @@
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wZqRiexXDfwljkiw4mhgmOqEwKQNQkW0fZy3QBcowkA.css?delta=0&amp;language=en&amp;theme=nrdc_theme&amp;include=eJxlkFGKxTAIRTdU2iWJiZLIJCZoMqG7nzI_bd8DETzq9aIaRRiZKx8B4w-MdkXf_PTB9ULOm94jqbSA5UmoKQ4Gl6Szbx0Nk2HPfpDNjmW_yT61z1DEM9NTYZ0u60zbr_Dy4z_vtdEsr8sRjSCZ0Cd81t6iYAHPaK_lYIwUbdbwZV2awjA8Xw1rndpSqKzzpc9oMcPl7nqCy-AlxICFbRyiMv4AEBKCkw" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_gZ7LewdUCmOnUiGAhn2zxl0CzcN0kbrYOZ72GkZN5WQ.css?delta=1&amp;language=en&amp;theme=nrdc_theme&amp;include=eJxlkFGKxTAIRTdU2iWJiZLIJCZoMqG7nzI_bd8DETzq9aIaRRiZKx8B4w-MdkXf_PTB9ULOm94jqbSA5UmoKQ4Gl6Szbx0Nk2HPfpDNjmW_yT61z1DEM9NTYZ0u60zbr_Dy4z_vtdEsr8sRjSCZ0Cd81t6iYAHPaK_lYIwUbdbwZV2awjA8Xw1rndpSqKzzpc9oMcPl7nqCy-AlxICFbRyiMv4AEBKCkw" />
 
+
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
     
-  </head>
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
+
+
   <body  class="path-node not-front node-page node-page--node-type-how-to theme-default" id="top--ePrkFdJwmKc">
     
 <div  class="c-skiplinks">

@@ -24,7 +24,28 @@ rel="alternate" hreflang="it" href="https://www.eufic.org/it/sicurezza-alimentar
 rel="stylesheet" href="https://eufic-1c6bf.kxcdn.com/en/cache/8b789df68bbdbdad4173d5d1ca82f054c52921b7.1671549576.css"> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PJFM4Z2');</script>
 
 
-</head><body><noscript><iframe
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    <body><noscript><iframe
 src="https://www.googletagmanager.com/ns.html?id=GTM-PJFM4Z2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header>

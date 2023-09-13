@@ -46,7 +46,90 @@
 <link rel="stylesheet" media="all" href="../sites/default/files/css/css_EwYBX98YjOuCDJKl0H756XieERT_c8JrgYxVpIwUOWY0348.css?delta=1&amp;language=en&amp;theme=nrdc_theme&amp;include=eJxlkFuOBCEIRTdUqVqSQSFKGh8BbVO7b2d-2ppJCAkHuDyKYnA9UabLQ3i5Xpe1w27rlBcyOsq3JEr1IDvBWqCTM45ltKOBQlRoyS7U0UDOLzlHacMLWyLcFQKI_IyF0LmWPTNv43nHHXmp4XW8maZdv_7MFYfQU1DRRWX8C_fYamAQZwn00eyVAIOO7P9dubZzXeF-JLQ2rLO4TGU89Ak0JLe2W_8y7jQZyYGQ9osL9w9QnJNB" />
 
     
-  </head>
+  
+<script>
+        var userId = document.getElementById("userId").value;
+        localStorage.setItem("userId", userId);
+        console.log(userId);
+        document.getElementById("popup").style.display = "none";
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['setUserId', userId]);
+
+
+        // Share the tracking cookie across example.com, www.example.com, subdomain.example.com, ...
+        _paq.push(['setCookieDomain', '*.exp234.fly.dev']);
+
+        // Tell Matomo the website domain so that clicks on these domains are not tracked as 'Outlinks'
+        _paq.push(['setDomains', '*.exp234.fly.dev']);
+
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+
+
+
+        (function () {
+            var u = "https://silveranabelle7tiinysite.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1  ']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = '//cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+</script>
+
+<script>
+        var userId = document.getElementById("userId").value;
+        localStorage.setItem("userId", userId);
+        console.log(userId);
+        document.getElementById("popup").style.display = "none";
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['setUserId', userId]);
+
+
+        // Share the tracking cookie across example.com, www.example.com, subdomain.example.com, ...
+        _paq.push(['setCookieDomain', '*.exp234.fly.dev']);
+
+        // Tell Matomo the website domain so that clicks on these domains are not tracked as 'Outlinks'
+        _paq.push(['setDomains', '*.exp234.fly.dev']);
+
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+
+
+
+        (function () {
+            var u = "https://silveranabelle7tiinysite.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1  ']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = '//cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+</script>
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
+
+
   <body  class="path-node not-front node-page node-page--node-type-news-commentary theme-default" id="top--7cJ4aYGb-Sc">
     
 <div  class="c-skiplinks">

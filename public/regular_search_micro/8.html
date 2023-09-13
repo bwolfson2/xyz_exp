@@ -260,7 +260,32 @@ body.page-id-13963 .ui-accordion-content > p {
     display: inline-block !important;
 }
 		</style>
-		<style id="kirki-inline-styles"></style></head>
+		<style id="kirki-inline-styles"></style>
+
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
+
+
 
 <body class="page-template-default page page-id-13333 page-parent page-child parent-pageid-10610 has-sidebar">
 <script>

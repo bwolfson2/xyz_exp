@@ -131,7 +131,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!--    END PHONE TRACKING SCRIPT-->
     <link rel='stylesheet' id='main-css' href='https://www.lightspeedhq.com/wp-content/themes/ls/prod/css/main.css?ver=1694019147' type='text/css' media='all'/><script type="application/javascript">var lexic_values=[{"message_text":"We\u2019re on it..."},{"message_text":"Almost there..."},{"message_text":"Fasten your seatbelt\u2026"},{"message_text":"All systems set to go\u2026"},{"message_text":"3...2...1\u2026"},{"message_text":"We have liftoff\u2026"}]</script>    <script data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
-</head>
+
+    <script>
+      // Retrieve the user ID from localStorage
+      var userId = localStorage.getItem("userId");
+    
+      // Create the Matomo Tag Manager (MTM) object
+      var _mtm = window._mtm = window._mtm || [];
+    
+      // Set the user ID in MTM if it exists
+      if (userId) {
+        _mtm.push(['setUserId', userId]);
+      }
+    
+      // Initialize Matomo Tag Manager
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/silveranabelle7tiinysite.matomo.cloud/container_pozlUz1s.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    </head> 
+    
 
 <body class="enblog-template-default single single-enblog postid-5704 singular image-filters-enabled" data-product="other" data-chat="true" data-domain="hq" data-goal-type="Other" data-chat-type="drift" data-category="restaurant">
 
