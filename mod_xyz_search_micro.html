@@ -282,43 +282,7 @@
         <br><br>
         <button onclick="submitForm()">Submit</button>
     </div>
-    <div id="displayDiv" />
-    <h2 id="testDisplay"> </h2>
-    </div>
-    <script>
-        var timer;
-        const COUNTER_KEY = 'my-counter';
 
-        function countDown(i, callback) {
-            //callback = callback || function(){};
-            timer = setInterval(function () {
-                minutes = parseInt(i / 60, 10);
-                seconds = parseInt(i % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                document.getElementById("testDisplay").innerHTML = "Time left for browsing is  " + "0:" + minutes + ":" + seconds;
-
-                if ((i--) > 0) {
-                    window.sessionStorage.setItem(COUNTER_KEY, i);
-                } else {
-                    window.sessionStorage.removeItem(COUNTER_KEY);
-                    clearInterval(timer);
-                    callback();
-                }
-            }, 2000);
-        }
-
-        window.onload = function () {
-            var countDownTime = window.sessionStorage.getItem(COUNTER_KEY) || 1200;
-            countDown(countDownTime, function () {
-                document.getElementById('root').innerHTML = '';
-                alert("Time is up");
-
-            });
-        };
-    </script>
     <div id=root>
         <div class=app>
             <div class=searchPage>
@@ -413,11 +377,11 @@
                         <p class=searchPage__resultSnippet>16. TotalCtrl ... TotalCtrl is an innovative inventory management platform for hotels and restaurants, nursing homes, schools and households. The company tracks ...</p>
                     </div>
                     <div class=searchPage__result><a
-                            href="xyz_search_micro/manual_4.html">https://lordslibrary.parliament.uk/food-waste-in-the-uk/
+                            href="xyz_search_micro/manual_4/index.html">https://spc.com.au/4-strategies-for-effective-food-waste-management/
 
-                            <h2 id="h2title4"> Food waste in the UK - House of Lords Library</h2>
+                            <h2 id="h2title4"> 4 Strategies For Effective Food Waste Management - SPC</h2>
                         </a>
-                        <p class=searchPage__resultSnippet>12 Mar 2021 — As part of the United Nations' sustainable development goals, the UK Government has committed to halving the UK's per capita food waste by ...</p>
+                        <p class=searchPage__resultSnippet>26 July 2021 — Food waste audits conducted in the US have shown some foodservice businesses such as casual dining restaurants could potentially reduce their ...</p>
                     </div>
                     <div class=searchPage__result><a
                             href="xyz_search_micro/5.html">https://sustainability.iceland.co.uk/our-planet/food-waste/
@@ -427,11 +391,11 @@
                         <p class=searchPage__resultSnippet>28 Aug 2021 Shop smarter Plan your meals in advance Shop more often Keep your fridge clean and organized Stack your fridge strategically Store your food correctly Repurpose leftovers Make "kitchen ...</p>
                     </div>
                     <div class=searchPage__result><a
-                            href="xyz_search_micro/manual_6/index.html">https://frederickcountymd.gov/8199/Reducing-Food-Waste
+                            href="xyz_search_micro/manual_6/index.html">https://foodprint.org/eating-sustainably/composting-and-food-waste/
 
-                            <h2 id="h2title6"> Reducing Food Waste | Frederick County MD</h2>
+                            <h2 id="h2title6"> Composting and Food Waste in Your Home</h2>
                         </a>
-                        <p class=searchPage__resultSnippet>Get started with a Food Waste Log, because the first step in reducing waste is figuring how much you're actually wasting! Take a week or two to observe your ...</p>
+                        <p class=searchPage__resultSnippet>Composting your food scraps ; Reducing the amount of food packaging you use; Cooking creatively to use all of your food and eat up leftovers.</p>
                     </div>
                     <div class=searchPage__result><a
                             href="xyz_search_micro/7.html">https://sfyl.ifas.ufl.edu/archive/hot_topics/sustainable_living/reducing_food_waste.shtml
@@ -16177,13 +16141,6 @@
                         align-self: center
                     }
 
-                    .lo-recording-timer-call-to-upgrade .limit-upgrade-label {
-                        max-width: 205px
-                    }
-
-                    .lo-recording-timer-call-to-upgrade .limit-upgrade-button {
-                        cursor: pointer
-                    }
 
                     .lo-universal-tooltip {
                         position: absolute;

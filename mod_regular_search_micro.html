@@ -279,45 +279,7 @@
         <br><br>
         <button onclick="submitForm()">Submit</button>
     </div>
-    <div id="displayDiv" />
-    <h2 id="testDisplay"> </h2>
-    </div>
-    <script>
-        var timer;
-        const COUNTER_KEY = 'my-counter';
 
-        function countDown(i, callback) {
-            //callback = callback || function(){};
-            timer = setInterval(function () {
-                minutes = parseInt(i / 60, 10);
-                seconds = parseInt(i % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                document.getElementById("testDisplay").innerHTML = "Time left for browsing is  " + "0:" + minutes + ":" + seconds;
-
-                if ((i--) > 0) {
-                    window.sessionStorage.setItem(COUNTER_KEY, i);
-                } else {
-                    window.sessionStorage.removeItem(COUNTER_KEY);
-                    clearInterval(timer);
-                    callback();
-                }
-            }, 1000);
-        }
-
-        window.onload = function () {
-            var countDownTime = window.sessionStorage.getItem(COUNTER_KEY) || 1200;
-            countDown(countDownTime, function () {
-                document.getElementById('root').innerHTML = '';
-                alert("Time is up");
-
-            });
-        };
-    </script>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- End Google Tag Manager (noscript) -->
     <div id=root>
         <div class=app>
             <div class=searchPage>

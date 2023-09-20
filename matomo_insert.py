@@ -58,8 +58,8 @@ if __name__ == "__main__":
     </head> 
     """
 
-    directory = "public/regular_search_micro"
-    # directory = "public/xyz_search_micro"
+    # directory = "public/regular_search_micro"
+    directory = "public/xyz_search_micro"
 
     find_replace_in_directory(directory, find_string, replace_string)
     # find_replace_in_directory(directory, replace_string, find_string, False)

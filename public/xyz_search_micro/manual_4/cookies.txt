@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.parliament.uk	TRUE	/	FALSE	1999999999	__cf_bm	a3YUgBjX70l2KNNi_0KuzwkkfP1wwg3NXiCESanb060-1694381167-0-AT/o7NuQH234Ujx1GSLO7s9eeZTRT5DPANQ5zSsaWztnEle0xFUbsYyYoo9chUoeQcoW5ItWgr9I9SUrf+n3t+Y=
+spc.com.au	TRUE	/	FALSE	1999999999	ip2location_redirection_first_visit	1695222656
+
